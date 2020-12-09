@@ -21,11 +21,17 @@ This repository contains research projects in federated learning from Webank AI 
 
 ## Publications
 [Highlight](#highlights)
+
 [Survey](#survey)
+
 [Paradigm](#paradigm)
+
 [Security](#security)
-[System performance](#system performance)
+
+[System performance](#system-performance)
+
 [Application](#application)
+
 [Dataset](#dataset)
 
 
