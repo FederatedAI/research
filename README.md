@@ -22,19 +22,19 @@ This repository contains research projects in federated learning from Webank AI 
 ## Publications
 Our publications are categorized  as below:
 
-[Highlight](#highlight). Our newly and highly interesting works.
+[<b>Highlight</b>](#highlight). Our newly and highly interesting works.
 
-[Paradigm](#paradigm). Various types of federated learning schemes. 
+[<b>Paradigm</b>](#paradigm). Various types of federated learning schemes. 
 
-[Security](#security). Privacy and data security.
+[<b>Security</b>](#security). Privacy and data security.
 
-[System performance](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
+[<b>System performance</b>](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
 
-[Application](#application). Federated learning in real-world applications.
+[<b>Application</b>](#application). Federated learning in real-world applications.
 
-[Dataset](#dataset). Datasets for federated learning research.
+[<b>Dataset</b>](#dataset). Datasets for federated learning research.
 
-[Survey](#survey).
+[<b>Survey</b>](#survey).
 
 ### Highlight
 | Paper| Code| Description|
