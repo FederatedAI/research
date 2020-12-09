@@ -20,32 +20,27 @@ This repository contains research projects in federated learning from Webank AI 
 
 
 ## Publications
-[Highlight](#highlights)
+Our publications are categorized  as below:
 
-[Survey](#survey)
+[Highlight](#highlight). Our newly and highly interesting works.
 
-[Paradigm](#paradigm)
+[Paradigm](#paradigm). Various types of federated learning schemes. 
 
-[Security](#security)
+[Security](#security). Privacy and data security.
 
-[System performance](#system-performance)
+[System performance](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
 
-[Application](#application)
+[Application](#application). Federated learning in real-world applications.
 
-[Dataset](#dataset)
+[Dataset](#dataset). Datasets for federated learning research.
 
+[Survey](#survey).
 
 ### Highlight
 | Paper| Code| Description|
 |----------------------------------------------------|-----|-----|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)|||
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)||
-
-### Survey
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
-|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)|||
-|[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)|||
 
 
 ### Paradigm
@@ -68,7 +63,6 @@ This repository contains research projects in federated learning from Webank AI 
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|||
 
 
-
 ### System performance
 | Paper| Code| Description|
 |----------------------------------------------------|-----|-----|
@@ -79,7 +73,6 @@ This repository contains research projects in federated learning from Webank AI 
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)|||
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)|||
 |[A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187) |||
-
 
 
 ### Application
@@ -98,6 +91,13 @@ This repository contains research projects in federated learning from Webank AI 
 | Paper| Code| Description|
 |----------------------------------------------------|-----|-----|
 |[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)||
+
+
+### Survey
+| Paper| Code| Description|
+|----------------------------------------------------|-----|-----|
+|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)|||
+|[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)|||
 
 
 
