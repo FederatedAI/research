@@ -50,7 +50,6 @@ Our publications are categorized  as below:
 |[Federated Transfer Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/1910.06001)|[code](https://github.com/FederatedAI/research/tree/main/publications/FTRL)||
 |[Privacy-preserving heterogeneous federated transfer learning](https://ieeexplore.ieee.org/document/9005992)||IEEE BigData 2019|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)||IEEE intelligent Systems|
-|[Secure Federated Transfer Learning](https://arxiv.org/abs/1812.03337)|||
 |[FedMVT: Semi-supervised Vertical Federated Learning with MultiView Training](https://arxiv.org/abs/2008.10838) ||IJCAI 2020 FL workshop|
 
 
