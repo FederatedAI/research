@@ -22,30 +22,24 @@ This repository contains research projects in federated learning from Webank AI 
 ## Publications
 Our publications are categorized  as below:
 
-[<b>Highlight</b>](#highlight). Our newly and highly interesting works.
-
-[<b>Paradigm</b>](#paradigm). Various types of federated learning schemes. 
-
-[<b>Security</b>](#security). Privacy and data security.
-
-[<b>System performance</b>](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
-
-[<b>Application</b>](#application). Federated learning in real-world applications.
-
-[<b>Dataset</b>](#dataset). Datasets for federated learning research.
-
-[<b>Survey</b>](#survey).
+- [<b>Highlight</b>](#highlight). Our newly and highly interesting works.
+- [<b>Paradigm</b>](#paradigm). Various types of federated learning schemes. 
+- [<b>Security</b>](#security). Privacy and data security.
+- [<b>System performance</b>](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
+- [<b>Application</b>](#application). Federated learning in real-world applications.
+- [<b>Dataset</b>](#dataset). Datasets for federated learning research.
+- [<b>Survey</b>](#survey).
 
 ### Highlight
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
 
 
 ### Paradigm
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Secure and Efficient Federated Transfer Learning](https://arxiv.org/abs/1910.13271)||IEEE BigData 2019|
 |[Privacy-preserving heterogeneous federated transfer learning](https://ieeexplore.ieee.org/document/9005992)||IEEE BigData 2019|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)||IEEE intelligent Systems|
@@ -54,8 +48,8 @@ Our publications are categorized  as below:
 
 
 ### Security
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
 |[Privacy-Preserving Deep Learning with SPDZ](https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf)||The AAAI Workshop on PPAI|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)||USENIX 2020 ATC|
@@ -63,8 +57,8 @@ Our publications are categorized  as below:
 
 
 ### System performance
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[A Fairness-aware Incentive Scheme for Federated Learning](https://dl.acm.org/doi/abs/10.1145/3375627.3375840)||AIES 2020|
 |[A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187) ||NeurIPS 2019 FL workshop|
 |[A Sustainable Incentive Scheme for Federated Learning](https://ieeexplore.ieee.org/document/9069185)||IEEE Intelligent Systems |
@@ -75,8 +69,8 @@ Our publications are categorized  as below:
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)|||
 
 ### Application
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Fedml: A research library and benchmark for federated machine learning](https://arxiv.org/abs/2007.13518)|[code](https://github.com/FedML-AI/FedML)|NeurIPS 2020 FL workshop|
 |[Federated Transfer Learning for EEG Signal Classification](https://arxiv.org/abs/2004.12321)|[code](https://github.com/DashanGao/Federated-Transfer-Learning-for-EEG)|IEEE EMBC 2020|
 |[Multi-Agent Visualization for Explaining Federated Learning](https://www.ijcai.org/Proceedings/2019/960)||IJCAI 2019|
@@ -88,14 +82,14 @@ Our publications are categorized  as below:
 
 
 ### Dataset
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)||
 
 
 ### Survey
-| Paper| Code| Description|
-|----------------------------------------------------|-----|-----|
+| Title| Code| Description|
+|-----|-----|-----|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)|||
 
