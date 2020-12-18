@@ -7,6 +7,9 @@ This repository contains research projects in federated learning from Webank AI 
 3. [Projects](#projects). Other projects in federated learning.
 
 ## NEWS
+<b>2020-12-18.</b> [#Call for papers. ACM Transactions on Intelligent Systems and Technology, Special Issue on Federated Learning: Algorithms, Systems, and Applications
+](https://dl.acm.org/pb-assets/static_journal_pages/tist/cfps/tist-si-cfp-12-2020-federated-learning2-1608108076107.pdf)
+
 <b>2020-11-06.</b> The research directory is moved out from FATE project as an independent repository. Now you can get our latest research by staring this repo.
 
 
