@@ -89,7 +89,7 @@ Our publications are categorized  as below:
 ### Dataset
 | Title| Code| Description|
 |-----|-----|-----|
-|[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)||
+|[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)|NeurIPS 2019 FL workshop|
 
 
 ### Survey
