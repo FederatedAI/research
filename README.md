@@ -59,6 +59,7 @@ Our publications are categorized  as below:
 |[Privacy-Preserving Deep Learning with SPDZ](https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf)||The AAAI Workshop on PPAI|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)||USENIX 2020 ATC|
 |[Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587)||IJCAI 2020 FL workshop|
+|[Dynamic backdoor attacks against federated learning](https://arxiv.org/abs/2011.07429)|||
 
 
 ### System performance
@@ -70,7 +71,7 @@ Our publications are categorized  as below:
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)||Knowledge-Based Systems|
 |[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)||IJCAI 2020|
 |[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|||
-|[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)|||
+|[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)||ECAI 2020|
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)|||
 
 ### Application
