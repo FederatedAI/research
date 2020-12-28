@@ -104,13 +104,19 @@ Our publications are categorized  as below:
 ## Projects
 Currently, we are actively contributing to two projects, [FedML](https://github.com/FedML-AI/FedML) (research-origented) and [FATE](https://github.com/FederatedAI/FATE) (application-oriented).
 
-- [<b>FedML</b>](https://github.com/FedML-AI/FedML)
+### [<b>FedML</b>](https://github.com/FedML-AI/FedML)
 
 FedML (Federated Machine Learning) is a research-oriented Federated Learning Library. It provides a plenty of out-of-the-box modules in federated learning, which greatly facilitates the development of new federated learning algorithms for researchers. We are co-contributor to this project and mainly maintain the part of vertical federated learning. 
+- [Vertical federated learning](https://github.com/FedML-AI/FedML/tree/master/fedml_experiments/standalone/classical_vertical_fl)
 
-- [<b>FATE</b>](https://github.com/FederatedAI/FATE)
+### [<b>FATE</b>](https://github.com/FederatedAI/FATE)
 
-FATE (Federated AI Technology Enabler) is an industrial grade Federated Learning framework. It has already incorporated many of our proposed methods and algorithms to enhance its security and efficiency under various federated learning scenarios. 
+FATE (Federated AI Technology Enabler) is an industrial grade Federated Learning framework. It has already incorporated many of our proposed methods and algorithms to enhance its security and efficiency under various federated learning scenarios. Some of the implemented algorithms are listed below:
+
+- [A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)
+- [A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187)
+- [Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)
+
 
 ## License
 [Apache 2.0 license](LICENSE).
