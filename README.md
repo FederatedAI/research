@@ -38,7 +38,7 @@ Our publications are categorized  as below:
 ### Highlight
 | Title| Code| Description|
 |-----|-----|-----|
-|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST|
+|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
 
 
@@ -99,7 +99,6 @@ Our publications are categorized  as below:
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)||Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)||IJCAI FL workshop 2020|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019|
-
 
 
 
