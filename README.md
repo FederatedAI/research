@@ -39,7 +39,7 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019|
-|[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
+|[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML FL workshop 2020|
 
 
 ### Paradigm
@@ -61,8 +61,8 @@ Our publications are categorized  as below:
 |[Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587)||IJCAI 2020 FL workshop|
 |[Dynamic backdoor attacks against federated learning](https://arxiv.org/abs/2011.07429)|||
 |[Rethinking Privacy Preserving Deep Learning: How to Evaluate and Thwart Privacy Attacks](https://link.springer.com/chapter/10.1007/978-3-030-63076-8_3)||Springer Book 2020|
-|[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NeurIPS 2019|
-|[Abnormal client behavior detection in federated learning](https://arxiv.org/abs/1910.09933)|||
+|[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NIPS 2019|
+|[Abnormal client behavior detection in federated learning](https://arxiv.org/abs/1910.09933)||NIPS workshop 2019|
 
 ### System performance
 | Title| Code| Description|
@@ -82,7 +82,7 @@ Our publications are categorized  as below:
 |[Fedml: A research library and benchmark for federated machine learning](https://arxiv.org/abs/2007.13518)|[code](https://github.com/FedML-AI/FedML)|NeurIPS 2020 FL workshop|
 |[Federated Transfer Learning for EEG Signal Classification](https://arxiv.org/abs/2004.12321)|[code](https://github.com/DashanGao/Federated-Transfer-Learning-for-EEG)|IEEE EMBC 2020|
 |[Multi-Agent Visualization for Explaining Federated Learning](https://www.ijcai.org/Proceedings/2019/960)||IJCAI 2019|
-|[HHHFL: Hierarchical Heterogeneous Horizontal Federated Learning for Electroencephalography](https://arxiv.org/abs/1909.05784)||IJCAI 2020 FL workshop|
+|[HHHFL: Hierarchical Heterogeneous Horizontal Federated Learning for Electroencephalography](https://arxiv.org/abs/1909.05784)||IJCAI FL workshop 2020|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)||AAAI 2020|
 |[Fair and Explainable Dynamic Engagement of Crowd Workers](https://www.ijcai.org/Proceedings/2019/961)||IJCAI 2019|
 |[Privacy-Preserving Technology to Help Millions of People: Federated Prediction Model for Stroke Prevention](https://arxiv.org/abs/2006.10517)||IJCAI 2020 FL workshop|
@@ -90,7 +90,7 @@ Our publications are categorized  as below:
 ### Dataset
 | Title| Code| Description|
 |-----|-----|-----|
-|[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)|NeurIPS 2019 FL workshop|
+|[Real-World Image Datasets for Federated Learning](https://arxiv.org/abs/1910.11089)| [code](https://github.com/FederatedAI/research/tree/main/datasets/federated_object_detection_benchmark)|NIPS FL workshop 2019|
 
 
 ### Survey
