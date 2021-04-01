@@ -38,8 +38,9 @@ Our publications are categorized  as below:
 ### Highlight
 | Title| Code| Description|
 |-----|-----|-----|
-|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML FL workshop 2020|
+|[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020|
+|[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019|
 
 
 ### Paradigm
@@ -83,7 +84,7 @@ Our publications are categorized  as below:
 |[Federated Transfer Learning for EEG Signal Classification](https://arxiv.org/abs/2004.12321)|[code](https://github.com/DashanGao/Federated-Transfer-Learning-for-EEG)|IEEE EMBC 2020|
 |[Multi-Agent Visualization for Explaining Federated Learning](https://www.ijcai.org/Proceedings/2019/960)||IJCAI 2019|
 |[HHHFL: Hierarchical Heterogeneous Horizontal Federated Learning for Electroencephalography](https://arxiv.org/abs/1909.05784)||IJCAI FL workshop 2020|
-|[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)||AAAI 2020|
+|[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020|
 |[Fair and Explainable Dynamic Engagement of Crowd Workers](https://www.ijcai.org/Proceedings/2019/961)||IJCAI 2019|
 |[Privacy-Preserving Technology to Help Millions of People: Federated Prediction Model for Stroke Prevention](https://arxiv.org/abs/2006.10517)||IJCAI 2020 FL workshop|
 
