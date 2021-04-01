@@ -97,7 +97,7 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST|
-|[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)|||
+|[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)||Foundations and Trends in Machine Learning|
 
 
 
