@@ -74,7 +74,7 @@ Our publications are categorized  as below:
 |[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)||IJCAI 2020|
 |[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|||
 |[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)||ECAI 2020|
-|[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)|||
+|[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)||ICML FL workshop 2020|
 
 ### Application
 | Title| Code| Description|
