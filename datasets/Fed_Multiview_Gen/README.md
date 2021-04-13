@@ -28,6 +28,6 @@ BLENDER_PATH = "D:/Program Files/blender-2.79b-windows64/blender.exe"
 
 Then generate the dataset with command:
 ```bash
-python --model_dir ./dataset_samples --target_dir ./dataset_images --action all
+python main.py --model_dir ./dataset_samples --target_dir ./dataset_images --action all
 ```
   
