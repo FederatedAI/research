@@ -73,14 +73,8 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|
-|[A Fairness-aware Incentive Scheme for Federated Learning](https://dl.acm.org/doi/abs/10.1145/3375627.3375840)||AIES 2020|
 |[A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187) ||NeurIPS 2019 FL workshop|
-|[A Sustainable Incentive Scheme for Federated Learning](https://ieeexplore.ieee.org/document/9069185)||IEEE Intelligent Systems |
-|[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)||Knowledge-Based Systems|
-|[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)||IJCAI 2020|
-|[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|||
 |[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)||ECAI 2020|
-|[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)||ICML FL workshop 2020|
 
 ### Incentive
 | Title| Code| Description|
