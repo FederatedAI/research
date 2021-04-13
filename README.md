@@ -72,7 +72,7 @@ Our publications are categorized  as below:
 ### Efficiency
 | Title| Code| Description|
 |-----|-----|-----|
-- [Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|
+|[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|
 |[A Fairness-aware Incentive Scheme for Federated Learning](https://dl.acm.org/doi/abs/10.1145/3375627.3375840)||AIES 2020|
 |[A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187) ||NeurIPS 2019 FL workshop|
 |[A Sustainable Incentive Scheme for Federated Learning](https://ieeexplore.ieee.org/document/9069185)||IEEE Intelligent Systems |
