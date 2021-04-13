@@ -7,6 +7,12 @@ This repository contains research projects in federated learning from Webank AI 
 3. [Projects](#projects). Other projects in federated learning.
 
 ## NEWS
+
+
+<b>2020-12-18.</b> [#Call for papers. International Workshop on Federated and Transfer Learning for Data Sparsity and Confidentiality
+in Conjunction with IJCAI 2021 (FTL-IJCAI'21)
+](http://federated-learning.org/fl-ijcai-2021/)
+
 <b>2020-12-18.</b> [#Call for papers. ACM Transactions on Intelligent Systems and Technology, Special Issue on Federated Learning: Algorithms, Systems, and Applications
 ](https://dl.acm.org/pb-assets/static_journal_pages/tist/cfps/tist-si-cfp-12-2020-federated-learning2-1608108076107.pdf)
 
@@ -27,8 +33,9 @@ Our publications are categorized  as below:
 
 - [<b>Highlight</b>](#highlight). Our newly and highly interesting works.
 - [<b>Paradigm</b>](#paradigm). Various types of federated learning schemes. 
-- [<b>Security</b>](#security). Privacy and data security.
-- [<b>System performance</b>](#system-performance). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
+- [<b>Security</b>](#Privacy). Data privacy and model security.
+- [<b>Efficiency</b>](#Efficiency). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
+- [<b>Incentive</b>](#Incentive). Incentive Mechanism.  
 - [<b>Application</b>](#application). Federated learning in real-world applications.
 - [<b>Dataset</b>](#dataset). Datasets for federated learning research.
 - [<b>Survey</b>](#survey).
