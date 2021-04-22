@@ -94,6 +94,7 @@ Our publications are categorized  as below:
 ### Application
 | Title| Code| Description|
 |-----|-----|-----|
+|[Variation-Aware Federated Learning with Multi-Source Decentralized Medical Image Data](https://ieeexplore.ieee.org/document/9268161)||IEEE Journal of Biomedical and Health Informatics |
 |[Fedml: A research library and benchmark for federated machine learning](https://arxiv.org/abs/2007.13518)|[code](https://github.com/FedML-AI/FedML)|NeurIPS 2020 FL workshop|
 |[Federated Transfer Learning for EEG Signal Classification](https://arxiv.org/abs/2004.12321)|[code](https://github.com/DashanGao/Federated-Transfer-Learning-for-EEG)|IEEE EMBC 2020|
 |[Multi-Agent Visualization for Explaining Federated Learning](https://www.ijcai.org/Proceedings/2019/960)||IJCAI 2019|
