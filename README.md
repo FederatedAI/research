@@ -38,7 +38,7 @@ Our publications are categorized  as below:
 - [<b>Incentive</b>](#Incentive). Incentive Mechanism.  
 - [<b>Application</b>](#application). Federated learning in real-world applications.
 - [<b>Dataset</b>](#dataset). Datasets for federated learning research.
-- [<b>Survey</b>](#survey). Survey on topics of federated learning.
+- [<b>Survey</b>](#survey). Survey on various topics of federated learning.
 
 -------------------
 
