@@ -9,7 +9,7 @@ This repository contains research projects in federated learning from Webank AI 
 ## NEWS
 
 
-<b>2021-05-05.</b> [#Call for papers. International Workshop on Federated and Transfer Learning for Data Sparsity and Confidentiality
+<b>2021-06-05.</b> [#Call for papers. International Workshop on Federated and Transfer Learning for Data Sparsity and Confidentiality
 in Conjunction with IJCAI 2021 (FTL-IJCAI'21)
 ](http://federated-learning.org/fl-ijcai-2021/)
 
