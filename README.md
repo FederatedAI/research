@@ -116,7 +116,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
-|[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710))||IJCAI FL workshop 2021|
+|[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)||IJCAI FL workshop 2021|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)||Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)||IJCAI FL workshop 2020|
 |[Towards Utilizing Unlabeled Data in Federated Learning: A Survey and Prospective](https://arxiv.org/abs/2002.11545)||2020|
@@ -138,6 +138,7 @@ FedML (Federated Machine Learning) is a research-oriented Federated Learning Lib
 
 FATE (Federated AI Technology Enabler) is an industrial grade Federated Learning framework. It has already incorporated many of our proposed methods and algorithms to enhance its security and efficiency under various federated learning scenarios. Some of the implemented algorithms are listed below:
 
+- [SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)
 - [A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)
 - [A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187)
 - [Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)
