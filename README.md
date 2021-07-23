@@ -49,6 +49,7 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML FL workshop 2020|
+|[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021, widely-used federated tree-boosting algorithm|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)||ACM TIST 2019, the 3rd most cited federated learning paper|
@@ -61,8 +62,8 @@ Our publications are categorized  as below:
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020|
 |[FedMVT: Semi-supervised Vertical Federated Learning with MultiView Training](https://arxiv.org/abs/2008.10838) ||IJCAI FL workshop 2020|
 |[Federated Transfer Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/1910.06001)|[code](https://github.com/FederatedAI/research/tree/main/publications/FTRL)||
-|[Privacy-preserving heterogeneous federated transfer learning](https://ieeexplore.ieee.org/document/9005992)||IEEE BigData 2019|
-|[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
+|[Privacy-preserving Heterogeneous Federated Transfer Learning](https://ieeexplore.ieee.org/document/9005992)||IEEE BigData 2019|
+|[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)||Knowledge-Based Systems|
 
 ### Security and Privacy
