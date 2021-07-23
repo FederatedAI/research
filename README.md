@@ -115,6 +115,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
+|[Towards Personalized Federated Learning]https://arxiv.org/abs/2103.00710)||IJCAI FL workshop 2021|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)||Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)||IJCAI FL workshop 2020|
 |[Towards Utilizing Unlabeled Data in Federated Learning: A Survey and Prospective](https://arxiv.org/abs/2002.11545)||2020|
