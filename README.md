@@ -70,6 +70,7 @@ Our publications are categorized  as below:
 |-----|-----|-----|
 |[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)||CVPR 2021|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
+|[Secure Federated Matrix Factorization](https://arxiv.org/abs/1906.05108)||IEEE Intelligent Systems 2020|
 |[Privacy-Preserving Deep Learning with SPDZ](https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf)||The AAAI Workshop on PPAI|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)||USENIX 2020 ATC|
 |[Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587)||IJCAI 2020 FL workshop|
@@ -115,7 +116,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
-|[Towards Personalized Federated Learning]https://arxiv.org/abs/2103.00710)||IJCAI FL workshop 2021|
+|[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710))||IJCAI FL workshop 2021|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)||Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)||IJCAI FL workshop 2020|
 |[Towards Utilizing Unlabeled Data in Federated Learning: A Survey and Prospective](https://arxiv.org/abs/2002.11545)||2020|
