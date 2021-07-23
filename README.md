@@ -62,7 +62,7 @@ Our publications are categorized  as below:
 |[FedMVT: Semi-supervised Vertical Federated Learning with MultiView Training](https://arxiv.org/abs/2008.10838) ||IJCAI FL workshop 2020|
 |[Federated Transfer Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/1910.06001)|[code](https://github.com/FederatedAI/research/tree/main/publications/FTRL)||
 |[Privacy-preserving heterogeneous federated transfer learning](https://ieeexplore.ieee.org/document/9005992)||IEEE BigData 2019|
-|[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|||
+|[Secureboost: A lossless federated learning framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)||Knowledge-Based Systems|
 
 ### Security and Privacy
