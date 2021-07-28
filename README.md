@@ -64,7 +64,7 @@ Our publications are categorized  as below:
 |[Privacy-preserving Heterogeneous Federated Transfer Learning](https://ieeexplore.ieee.org/document/9005992)| |IEEE BigData 2019|
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)| |Knowledge-Based Systems|
-|Cross-silo Federated Neural Architecture Search forHeterogeneous and Cooperative Systems|[code](https://github.com/FederatedAI/research/tree/main/publications/ss_vfnas)|Self-supervised Vertical Federated NAS|
+|[Cross-silo Federated Neural Architecture Search forHeterogeneous and Cooperative Systems](https://arxiv.org/pdf/2101.11896.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/ss_vfnas)|Self-supervised Vertical Federated NAS|
 
 ### Security and Privacy
 | Title| Code| Description|
