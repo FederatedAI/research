@@ -48,13 +48,7 @@ no_adaptation_hyperparameters = {
 }
 
 data_dir = census_data_creation['processed_data_dir']
-
-# data_tag = "all4000pos001"
-# data_tag = 'all4000pos002'
-# data_tag = 'all4000pos004'
-# data_tag = 'all4000pos004v5'
-data_tag = 'all4000pos004v8'
-# data_tag = 'all4000pos004v7'
+data_tag = 'all4000pos004'
 
 data_hyperparameters = {
     "source_ad_train_file_name": data_dir + f'undergrad_census9495_ad_{data_tag}_train.csv',

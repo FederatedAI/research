@@ -46,8 +46,6 @@ no_adaptation_hyperparameters = {
 }
 
 data_dir = ppd_data_creation['processed_data_dir']
-# data_dir = "/Users/yankang/Documents/Data/Data_Open_Analysis_master/Kesci_PPD/PPD_data_output_20210522/"
-# data_tag = 'YOUR DATA TAG'
 data_tag = 'all4000pos004'
 
 data_hyperparameters = {

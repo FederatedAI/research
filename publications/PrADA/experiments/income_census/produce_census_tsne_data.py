@@ -11,8 +11,6 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser("census_tsne_distribution")
     parser.add_argument('--task_id', type=str, required=True)
-    # parser.add_argument('--adapt', default=False, action='store_true')
-    # parser.add_argument('--interaction', default=False, action='store_true')
     args = parser.parse_args()
     task_id = args.task_id
     apply_adaptation = tsne_embedding_creation["apply_adaptation"]
