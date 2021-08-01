@@ -8,6 +8,11 @@ This repository contains research projects in federated learning from Webank AI 
 
 ## NEWS
 
+<b>2021-10-01 (ET).</b> [#Call for papers. New Frontiers in Federated Learning:
+Privacy, Fairness, Robustness, Personalization and Data Ownership Workshop
+in Conjunction with NeurIPS 2021
+](https://neurips2021workshopfl.github.io/NFFL-2021/index.html)
+
 <b>2021-06-20.</b> [#Call for papers. International Workshop on Federated and Transfer Learning for Data Sparsity and Confidentiality
 in Conjunction with IJCAI 2021 (FTL-IJCAI'21)
 ](http://federated-learning.org/fl-ijcai-2021/)
