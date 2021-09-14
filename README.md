@@ -8,6 +8,12 @@ This repository contains research projects in federated learning from Webank AI 
 
 ## NEWS
 
+<b>2021-11-12 </b> [#Call for papers. https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning
+](https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning)
+
+<b>2021-11-12 </b> [#Call for papers. International Workshop on Trustable, Verifiable and Auditable Federated Learning in Conjunction with AAAI 2022 (FL-AAAI-22)
+](http://federated-learning.org/fl-aaai-2022/)
+
 <b>2021-10-01 (ET).</b> [#Call for papers. New Frontiers in Federated Learning:
 Privacy, Fairness, Robustness, Personalization and Data Ownership Workshop
 in Conjunction with NeurIPS 2021
