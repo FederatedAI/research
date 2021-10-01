@@ -6,6 +6,10 @@ This repository contains research projects in federated learning from Webank AI 
 2. [Publications](#publications). Implementation codes of our publications.
 3. [Projects](#projects). Other projects in federated learning.
 
+# Federated Learning Portal
+
+This [webportal](http://federated-learning.org/) keeps track of books, workshops, conference special tracks, journal special issues, standardization effort and other notable events related to the field of Federated Learning (FL).
+
 ## NEWS
 
 <b>2022-01-15 </b> [#Call for papers. https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning
