@@ -80,6 +80,7 @@ Our publications are categorized  as below:
 ### Efficiency
 | Title| Code| Description|
 |-----|-----|-----|
+|[FLASHE: Additively Symmetric Homomorphic Encryption for Cross-Silo Federated Learning](https://arxiv.org/abs/2109.00675)| |Arxiv 2021|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|
 |[A Communication Efficient Collaborative Learning Framework for Distributed Features](https://arxiv.org/abs/1912.11187)| |NeurIPS 2019 FL workshop|
 |[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)| |ECAI 2020|
