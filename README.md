@@ -106,9 +106,12 @@ Our publications are categorized  as below:
 ### Incentive
 | Title| Code| Description|
 |-----|-----|-----|
+|Contribution-Aware Federated Learning for Smart Healthcare| |IAAI 2022|
 |[A Fairness-aware Incentive Scheme for Federated Learning](https://dl.acm.org/doi/abs/10.1145/3375627.3375840)| |AIES 2020|
 |[A Sustainable Incentive Scheme for Federated Learning](https://ieeexplore.ieee.org/document/9069185)| |IEEE Intelligent Systems |
 |[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)| |IJCAI 2020|
+
+
 
 
 ### Application
