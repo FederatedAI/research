@@ -18,24 +18,6 @@ This [webportal](http://federated-learning.org/) keeps track of books, workshops
 <b>2021-11-12 </b> [#Call for papers. International Workshop on Trustable, Verifiable and Auditable Federated Learning in Conjunction with AAAI 2022 (FL-AAAI-22)
 ](http://federated-learning.org/fl-aaai-2022/)
 
-<b>2021-10-01 (ET).</b> [#Call for papers. New Frontiers in Federated Learning:
-Privacy, Fairness, Robustness, Personalization and Data Ownership Workshop
-in Conjunction with NeurIPS 2021
-](https://neurips2021workshopfl.github.io/NFFL-2021/index.html)
-
-<b>2021-06-20.</b> [#Call for papers. International Workshop on Federated and Transfer Learning for Data Sparsity and Confidentiality
-in Conjunction with IJCAI 2021 (FTL-IJCAI'21)
-](http://federated-learning.org/fl-ijcai-2021/)
-
-<b>2021-06-10.</b> [#Call for papers. International Workshop on Federated Learning for User Privacy and Data Confidentiality
-in Conjunction with ICML 2021 (FL-ICML'21)
-](http://federated-learning.org/fl-icml-2021/)
-
-<b>2020-12-18.</b> [#Call for papers. ACM Transactions on Intelligent Systems and Technology, Special Issue on Federated Learning: Algorithms, Systems, and Applications
-](https://dl.acm.org/pb-assets/static_journal_pages/tist/cfps/tist-si-cfp-12-2020-federated-learning2-1608108076107.pdf)
-
-<b>2020-11-06.</b> The research directory is moved out from FATE project as an independent repository. Now you can get our latest research by staring this repo.
-
 
 ## Datasets
 | Dataset | Description |
@@ -112,8 +94,6 @@ Our publications are categorized  as below:
 |[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)| |IJCAI 2020|
 
 
-
-
 ### Application
 | Title| Code| Description|
 |-----|-----|-----|
@@ -135,6 +115,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
+|[Toward Responsible AI: An Overview of Federated Learning for User-centered Privacy-preserving Computing](https://dl.acm.org/doi/abs/10.1145/3485875)| |ACM TIST 2022|
 |[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IJCAI FL workshop 2021|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)| |Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)| |IJCAI FL workshop 2020|
