@@ -12,11 +12,13 @@ This [webportal](http://federated-learning.org/) keeps track of books, workshops
 
 ## NEWS
 
+<b>2021-11-12 </b> [#Call for papers. International Workshop on Trustworthy Federated Learning in Conjunction with IJCAI 2022 (FL-IJCAI'22))
+](https://federated-learning.org/fl-ijcai-2022/)
+
 <b>2022-01-15 </b> [#Call for papers. https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning
 ](https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning)
 
-<b>2021-11-12 </b> [#Call for papers. International Workshop on Trustable, Verifiable and Auditable Federated Learning in Conjunction with AAAI 2022 (FL-AAAI-22)
-](http://federated-learning.org/fl-aaai-2022/)
+
 
 
 ## Datasets
@@ -45,6 +47,8 @@ Our publications are categorized  as below:
 ### Highlight
 | Title| Code| Description|
 |-----|-----|-----|
+|[No Free Lunch Theorem for Security and Utility in Federated
+Learning](https://arxiv.org/pdf/2203.05816.pdf)||ArXiv 2022, New theorem for secure federated learning|
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021, widely-used federated tree-boosting algorithm|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|
