@@ -47,7 +47,8 @@ Our publications are categorized  as below:
 ### Highlight
 | Title| Code| Description|
 |-----|-----|-----|
-|[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ArXiv 2022, New theorem for secure federated learning|
+|[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||Under review, New theorem for secure federated learning|
+|[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||Under review, New research direction for secure federated learning|
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021, widely-used federated tree-boosting algorithm|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|
@@ -69,6 +70,7 @@ Our publications are categorized  as below:
 ### Security and Privacy
 | Title| Code| Description|
 |-----|-----|-----|
+|[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||Under review, New research direction for secure federated learning|
 |[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)| |CVPR 2021|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
 |[Secure Federated Matrix Factorization](https://arxiv.org/abs/1906.05108)| |IEEE Intelligent Systems 2020|
