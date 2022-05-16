@@ -70,7 +70,7 @@ Our publications are categorized  as below:
 ### Security and Privacy
 | Title| Code| Description|
 |-----|-----|-----|
-|[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)|||
+|[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)||IJCAI2022|
 |[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||Under review, New research direction for secure federated learning|
 |[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)| |CVPR 2021|
 |[Backdoor attacks and defenses in feature-partitioned collaborative learning](https://arxiv.org/abs/2007.03608)|[code](https://github.com/FederatedAI/research/tree/main/publications/vfl_backdoor)|ICML 2020 FL workshop|
