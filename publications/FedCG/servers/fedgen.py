@@ -2,13 +2,10 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import DataLoader
-from models import Classifier, Generator
-from utils import AvgMeter, add_gaussian_noise, set_seed
-import copy
 
 from config import args, logger, device
+from models import Classifier, Generator
+from utils import AvgMeter, set_seed
 
 
 class Server():
@@ -71,9 +68,6 @@ class Server():
             torch.save(optim_dict, args.checkpoint_dir + "/client" + str(i) + ".pkl")
 
     def receive(self, models):
-        if args.parallel:
-            self.load_client()
-            
         for model in models:
             avg_param = {}
             params = []
@@ -91,30 +85,26 @@ class Server():
             global_param = self.global_net[model].state_dict()
             for client in self.clients:
                 client.net[model].load_state_dict(global_param)
-                
-        if args.parallel:
-            self.save_client()
-            
 
     def global_train(self):
         set_seed(args.seed)
-        
+
         logger.info("Training Server's Network Start!")
         G_loss_meter = AvgMeter()
         G_div_meter = AvgMeter()
 
         self.frozen_net(["generator"], False)
-        
+
         for epoch in range(args.global_epoch):
             G_loss_meter.reset()
             G_div_meter.reset()
-            
+
             for batch in range(args.global_iter_per_epoch):
                 y = torch.randint(0, args.num_classes, (args.batch_size,)).to(device)
                 z = torch.randn(args.batch_size, args.noise_dim, 1, 1).to(device)
 
                 self.G_optimizer.zero_grad()
-                
+
                 # gen loss
                 pred = 0
                 G = self.global_net["generator"](z, y)
@@ -122,15 +112,15 @@ class Server():
                     GC = client.net["classifier"](G)
                     pred += self.weights[i] * GC
                 G_loss = self.CE_criterion(pred, y)
-                
+
                 # div loss
-                split_size = int(args.batch_size/2)
+                split_size = int(args.batch_size / 2)
                 z1, z2 = torch.split(z, split_size, dim=0)
                 G1, G2 = torch.split(G, split_size, dim=0)
                 lz = torch.mean(torch.abs(G1 - G2)) / torch.mean(torch.abs(z1 - z2))
                 eps = 1 * 1e-5
                 G_div = 1 / (lz + eps)
-                
+
                 (G_loss + G_div).backward()
                 self.G_optimizer.step()
                 G_loss_meter.update(G_loss.item())
@@ -139,5 +129,5 @@ class Server():
             G_loss = G_loss_meter.get()
             G_div_meter.update(G_div.item())
             logger.info("Server Epoch:[%2d], G_loss:%2.6f, G_div:%2.6f" % (epoch, G_loss, G_div))
-        
+
         self.frozen_net(["generator"], True)

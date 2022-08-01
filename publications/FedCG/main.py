@@ -1,10 +1,5 @@
-import torch
-import numpy as np
-
-from config import args, logger, device
 from dataset import *
-from utils import BestMeter, set_seed
-import torch.multiprocessing as tmx
+from utils import set_seed
 
 if args.algorithm == 'local':
     from clients.local import Client
@@ -23,17 +18,12 @@ elif args.algorithm == 'feddf':
 elif args.algorithm == 'fedgen':
     from clients.fedgen import Client
     from servers.fedgen import Server
-elif args.algorithm == 'fedgd':
-    from clients.fedgd import Client
-    from servers.fedgd import Server
-elif args.algorithm == 'fedgd_w':
-    from clients.fedgd_w import Client
-    from servers.fedgd import Server
-
-try:
-    tmx.set_start_method("spawn")
-except:
-    pass
+elif args.algorithm == 'fedcg':
+    from clients.fedcg import Client
+    from servers.fedcg import Server
+elif args.algorithm == 'fedcg_w':
+    from clients.fedcg_w import Client
+    from servers.fedcg import Server
 
 
 def main():
@@ -69,7 +59,7 @@ def main():
         for i in range(args.n_clients):
             client = Client(i, trainsets[i], valsets[i], testsets[i])
             clients.append(client)
-    
+
     else:
         trainsets, valsets, testsets = dataset.data_partition()
         clients = []
@@ -82,26 +72,15 @@ def main():
     best_val_accs = [0.] * args.n_clients
     test_accs = [0.] * args.n_clients
     best_rounds = [-1] * args.n_clients
-    
+
     # federated learning process
     current_round = 0
     while True:
         logger.info("** Communication Round:[%2d] Start! **" % current_round)
 
         # client train
-        if args.parallel:
-            client_processes = []
-            pool = tmx.Pool()
-            for i in range(args.n_clients):
-                p = pool.apply_async(clients[i].local_train, args=(current_round,))
-                client_processes.append(p)
-            pool.close()
-            pool.join()
-            for p in client_processes:
-                p.get()
-        else:
-            for i in range(args.n_clients):
-                clients[i].local_train(current_round)
+        for i in range(args.n_clients):
+            clients[i].local_train(current_round)
 
         # client test
         for i in range(args.n_clients):
@@ -115,7 +94,7 @@ def main():
         logger.info("communication round:%2d, after local train result:" % current_round)
         for i in range(args.n_clients):
             logger.info("client:%2d, test acc:%2.6f, best epoch:%2d" % (i, test_accs[i], best_rounds[i]))
-        
+
         # early stop
         early_stop = True
         for i in range(args.n_clients):
@@ -123,7 +102,7 @@ def main():
                 early_stop = False
                 break
         if early_stop:
-            break;
+            break
 
         # communication
         if args.algorithm == "local":
@@ -146,12 +125,12 @@ def main():
             server.receive(["extractor", "classifier"])
             server.global_train()
             server.send(["extractor", "classifier"])
-            
-        elif args.algorithm == "fedgd" or args.algorithm == "fedgd_w":
+
+        elif args.algorithm == "fedcg" or args.algorithm == "fedcg_w":
             server.receive(["generator", "classifier"])
             server.global_train()
             server.send(["generator", "classifier"])
-            
+
         current_round += 1
         if current_round >= 200:
             break

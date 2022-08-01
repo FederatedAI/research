@@ -1,12 +1,10 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from torch.autograd import Function
-from utils import weights_init
-from torchvision.models import resnet18
-from config import args, logger, device
 import torch.nn.utils.spectral_norm as spectral_norm
+from torchvision.models import resnet18
 
+from config import args
+from utils import weights_init
 
 if args.model == "lenet5":
 
@@ -27,7 +25,7 @@ if args.model == "lenet5":
             x = self.extractor(x)
             return x
 
-        
+
     class Classifier(nn.Module):
 
         def __init__(self, class_num=10):
@@ -44,7 +42,8 @@ if args.model == "lenet5":
         def forward(self, x):
             x = self.classifier(x)
             return x
-        
+
+
     class Generator(nn.Module):
 
         def __init__(self):
@@ -60,7 +59,7 @@ if args.model == "lenet5":
                 nn.ConvTranspose2d(256, 128, 2, 1, 0, bias=False),
                 nn.BatchNorm2d(128),
                 nn.LeakyReLU(0.2, inplace=True),
-                nn.ConvTranspose2d(128, args.feature_num*1, 2, 1, 0, bias=False),
+                nn.ConvTranspose2d(128, args.feature_num * 1, 2, 1, 0, bias=False),
                 nn.Sigmoid(),
             )
             self.apply(weights_init)
@@ -69,8 +68,8 @@ if args.model == "lenet5":
             y = self.embedding(y).unsqueeze(-1).unsqueeze(-1)
             zy = torch.cat([z, y], 1)
             return self.generator(zy)
-        
-        
+
+
     class Discriminator(nn.Module):
 
         def __init__(self):
@@ -95,11 +94,11 @@ if args.model == "lenet5":
             y = self.embedding(y).unsqueeze(-1).unsqueeze(-1)
             y = y.expand(y.size(0), args.num_classes, args.feature_size, args.feature_size)
             fy = torch.cat([f, y], 1)
-            return self.discriminator(fy).squeeze(-1).squeeze(-1)    
+            return self.discriminator(fy).squeeze(-1).squeeze(-1)
 
-    
+
 elif args.model == "alexnet":
-    
+
     class Extractor(nn.Module):
 
         def __init__(self):
@@ -116,6 +115,7 @@ elif args.model == "alexnet":
         def forward(self, x):
             x = self.extractor(x)
             return x
+
 
     class Classifier(nn.Module):
 
@@ -143,7 +143,8 @@ elif args.model == "alexnet":
         def forward(self, x):
             x = self.classifier(x)
             return x
-        
+
+
     class Generator(nn.Module):
 
         def __init__(self):
@@ -159,7 +160,7 @@ elif args.model == "alexnet":
                 nn.ConvTranspose2d(256, 128, 4, 1, 0, bias=False),
                 nn.BatchNorm2d(128),
                 nn.LeakyReLU(0.2, inplace=True),
-                nn.ConvTranspose2d(128, args.feature_num*1, 4, 1, 0, bias=False),
+                nn.ConvTranspose2d(128, args.feature_num * 1, 4, 1, 0, bias=False),
                 nn.Sigmoid(),
             )
             self.apply(weights_init)
@@ -168,8 +169,8 @@ elif args.model == "alexnet":
             y = self.embedding(y).unsqueeze(-1).unsqueeze(-1)
             zy = torch.cat([z, y], 1)
             return self.generator(zy)
-        
-        
+
+
     class Discriminator(nn.Module):
 
         def __init__(self):
@@ -194,12 +195,12 @@ elif args.model == "alexnet":
             y = self.embedding(y).unsqueeze(-1).unsqueeze(-1)
             y = y.expand(y.size(0), args.num_classes, args.feature_size, args.feature_size)
             fy = torch.cat([f, y], 1)
-            return self.discriminator(fy).squeeze(-1).squeeze(-1)    
-    
-    
-    
+            return self.discriminator(fy).squeeze(-1).squeeze(-1)
+
+
+
 elif args.model == "resnet18":
-    
+
     class Extractor(nn.Module):
 
         def __init__(self):
@@ -218,8 +219,8 @@ elif args.model == "resnet18":
             x = self.bn1(x)
             x = self.relu(x)
             x = self.maxpool(x)  # [64, 64, 56, 56]
-            x = self.layer1(x)   # [64, 64, 56, 56]
-            x = self.layer2(x)   # [64, 128, 28, 28]
+            x = self.layer1(x)  # [64, 64, 56, 56]
+            x = self.layer2(x)  # [64, 128, 28, 28]
             x = self.sigmoid(x)
             return x
 
@@ -241,9 +242,10 @@ elif args.model == "resnet18":
             x = torch.flatten(x, 1)
             x = self.fc(x)
             return x
-        
+
+
     class Generator(nn.Module):
-    
+
         def __init__(self):
             super(Generator, self).__init__()
             self.embedding = nn.Embedding(args.num_classes, args.num_classes)
@@ -257,7 +259,7 @@ elif args.model == "resnet18":
                 nn.ConvTranspose2d(256, 128, 4, 2, 1, bias=False),
                 nn.BatchNorm2d(128),
                 nn.LeakyReLU(0.2, inplace=True),
-                nn.ConvTranspose2d(128, args.feature_num*1, 4, 2, 1, bias=False),
+                nn.ConvTranspose2d(128, args.feature_num * 1, 4, 2, 1, bias=False),
                 nn.Sigmoid(),
             )
             self.apply(weights_init)
@@ -267,9 +269,9 @@ elif args.model == "resnet18":
             zy = torch.cat([z, y], 1)
             return self.generator(zy)
 
-    
+
     class Discriminator(nn.Module):
-    
+
         def __init__(self):
             super(Discriminator, self).__init__()
             self.embedding = nn.Embedding(args.num_classes, args.num_classes)
@@ -293,18 +295,17 @@ elif args.model == "resnet18":
             y = y.expand(y.size(0), args.num_classes, args.feature_size, args.feature_size)
             fy = torch.cat([f, y], 1)
             return self.discriminator(fy).squeeze(-1).squeeze(-1)
-        
 
 if __name__ == "__main__":
     x = torch.rand(64, 3, 224, 224)
     y = torch.randint(0, 10, (64,))
     z = torch.rand(64, 100, 1, 1)
-    
+
     extractor = Extractor()
     classifier = Classifier()
     generator = Generator()
     discriminator = Discriminator()
-    
+
     E = extractor(x)
     print("E", E.shape)
     G = generator(z, y)

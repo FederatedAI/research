@@ -1,14 +1,13 @@
+import copy
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from models import Extractor, Classifier
-from utils import AvgMeter, set_seed, add_gaussian_noise
-import numpy as np
-import copy
 
 from config import args, logger, device
+from models import Extractor, Classifier
+from utils import AvgMeter, set_seed, add_gaussian_noise
 
 
 class Client():
@@ -16,9 +15,12 @@ class Client():
     def __init__(self, client_id, trainset, valset, testset):
         set_seed(args.seed)
         self.id = client_id
-        self.trainloader = DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=0, pin_memory=True)
-        self.valloader = DataLoader(valset, batch_size=args.batch_size*10, shuffle=False, num_workers=0, pin_memory=False)
-        self.testloader = DataLoader(testset, batch_size=args.batch_size*10, shuffle=False, num_workers=0, pin_memory=False)
+        self.trainloader = DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=0,
+                                      pin_memory=True)
+        self.valloader = DataLoader(valset, batch_size=args.batch_size * 10, shuffle=False, num_workers=0,
+                                    pin_memory=False)
+        self.testloader = DataLoader(testset, batch_size=args.batch_size * 10, shuffle=False, num_workers=0,
+                                     pin_memory=False)
         self.train_size = len(trainset)
         self.val_size = len(valset)
         self.test_size = len(testset)
@@ -64,10 +66,11 @@ class Client():
         ##############################################################
         self.net = nn.ModuleDict()
 
-        self.net["extractor"] = Extractor()    # E
+        self.net["extractor"] = Extractor()  # E
         self.net["classifier"] = Classifier()  # C
         self.frozen_net(["extractor", "classifier"], True)
-        self.EC_optimizer = optim.Adam(self.get_params(["extractor", "classifier"]), lr=args.lr, weight_decay=args.weight_decay)
+        self.EC_optimizer = optim.Adam(self.get_params(["extractor", "classifier"]), lr=args.lr,
+                                       weight_decay=args.weight_decay)
 
         self.net.to(device)
 
@@ -90,7 +93,6 @@ class Client():
                 total += x.size(0)
         return (correct / total).item()
 
-    
     def local_val(self):
         correct, total = 0, 0
         with torch.no_grad():
@@ -105,51 +107,44 @@ class Client():
                 total += x.size(0)
         return (correct / total).item()
 
-    
     def local_train(self, current_round):
         set_seed(args.seed)
-        if args.parallel:
-            if current_round > 0:
-                self.load_client()
-                
         logger.info("Training Client %2d's EC Network Start!" % self.id)
         EC_loss_meter = AvgMeter()
         prox_reg_meter = AvgMeter()
         global_weight_collector = copy.deepcopy(list(self.net.parameters()))
-        
+
         for epoch in range(args.local_epoch):
             EC_loss_meter.reset()
             prox_reg_meter.reset()
-            
+
             self.frozen_net(["extractor", "classifier"], False)
-            
+
             for batch, (x, y) in enumerate(self.trainloader):
                 if args.add_noise:
                     x += add_gaussian_noise(x, mean=0., std=self.noise_std)
                 x = x.to(device)
                 y = y.to(device)
-                
+
                 self.EC_optimizer.zero_grad()
-                
+
                 E = self.net["extractor"](x)
                 EC = self.net["classifier"](E)
                 EC_loss = self.CE_criterion(EC, y)
-                
+
                 prox_reg = 0.0
                 for param_index, param in enumerate(self.net.parameters()):
                     prox_reg += ((args.mu / 2) * torch.norm((param - global_weight_collector[param_index])) ** 2)
-  
+
                 (EC_loss + prox_reg).backward()
                 self.EC_optimizer.step()
                 EC_loss_meter.update(EC_loss.item())
                 prox_reg_meter.update(prox_reg.item())
-                
+
             self.frozen_net(["extractor", "classifier"], True)
             EC_loss = EC_loss_meter.get()
             prox_reg = prox_reg_meter.get()
-            
-            EC_acc = self.local_val()
-            logger.info("Client:[%2d], Epoch:[%2d], EC_loss:%2.6f, prox_reg:%2.6f, EC_acc:%2.6f" % (self.id, epoch, EC_loss, prox_reg, EC_acc))
 
-        if args.parallel:
-            self.save_client()
+            EC_acc = self.local_val()
+            logger.info("Client:[%2d], Epoch:[%2d], EC_loss:%2.6f, prox_reg:%2.6f, EC_acc:%2.6f" % (
+                self.id, epoch, EC_loss, prox_reg, EC_acc))

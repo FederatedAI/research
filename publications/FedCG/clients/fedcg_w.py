@@ -1,14 +1,12 @@
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from models import Extractor, Classifier, Generator, Discriminator
-from utils import AvgMeter, set_seed, add_gaussian_noise
-import numpy as np
-import copy
 
 from config import args, logger, device
+from models import Extractor, Classifier, Generator, Discriminator
+from utils import AvgMeter, set_seed, add_gaussian_noise
 
 
 class Client():
@@ -16,9 +14,12 @@ class Client():
     def __init__(self, client_id, trainset, valset, testset):
         set_seed(args.seed)
         self.id = client_id
-        self.trainloader = DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=0, pin_memory=True)
-        self.valloader = DataLoader(valset, batch_size=args.batch_size*10, shuffle=False, num_workers=0, pin_memory=False)
-        self.testloader = DataLoader(testset, batch_size=args.batch_size*10, shuffle=False, num_workers=0, pin_memory=False)
+        self.trainloader = DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=0,
+                                      pin_memory=True)
+        self.valloader = DataLoader(valset, batch_size=args.batch_size * 10, shuffle=False, num_workers=0,
+                                    pin_memory=False)
+        self.testloader = DataLoader(testset, batch_size=args.batch_size * 10, shuffle=False, num_workers=0,
+                                     pin_memory=False)
         self.train_size = len(trainset)
         self.val_size = len(valset)
         self.test_size = len(testset)
@@ -69,12 +70,13 @@ class Client():
         ##############################################################
         self.net = nn.ModuleDict()
 
-        self.net["extractor"] = Extractor()          # E
-        self.net["classifier"] = Classifier()        # C
-        self.net["generator"] = Generator()          # D
+        self.net["extractor"] = Extractor()  # E
+        self.net["classifier"] = Classifier()  # C
+        self.net["generator"] = Generator()  # D
         self.net["discriminator"] = Discriminator()  # G
         self.frozen_net(["extractor", "classifier", "generator", "discriminator"], True)
-        self.EC_optimizer = optim.Adam(self.get_params(["extractor", "classifier"]), lr=args.lr, weight_decay=args.weight_decay)
+        self.EC_optimizer = optim.Adam(self.get_params(["extractor", "classifier"]), lr=args.lr,
+                                       weight_decay=args.weight_decay)
         self.D_optimizer = optim.Adam(self.get_params(["discriminator"]), lr=args.lr, betas=(0.5, 0.999))
         self.G_optimizer = optim.Adam(self.get_params(["generator"]), lr=args.lr, betas=(0.5, 0.999))
 
@@ -85,7 +87,6 @@ class Client():
         self.MSE_criterion = nn.MSELoss().to(device)
         self.COS_criterion = nn.CosineSimilarity().to(device)
 
-    
     def compute_gan_acc(self):
         correct, total = 0, 0
         with torch.no_grad():
@@ -97,7 +98,7 @@ class Client():
                 correct += torch.sum((torch.argmax(pred, dim=1) == y).float())
                 total += args.batch_size
         return (correct / total).item()
-        
+
     def local_test(self):
         correct, total = 0, 0
         with torch.no_grad():
@@ -128,33 +129,29 @@ class Client():
 
     def local_train(self, current_round):
         set_seed(args.seed)
-        if args.parallel:
-            if current_round > 0:
-                self.load_client()
-                
         logger.info("Training Client %2d's EC Network Start!" % self.id)
         EC_loss_meter = AvgMeter()
         EG_distance_meter = AvgMeter()
-        
+
         for epoch in range(args.local_epoch):
             EC_loss_meter.reset()
             EG_distance_meter.reset()
-            
+
             self.frozen_net(["extractor", "classifier"], False)
-            
+
             for batch, (x, y) in enumerate(self.trainloader):
                 if args.add_noise:
                     x += add_gaussian_noise(x, mean=0., std=self.noise_std)
                 x = x.to(device)
                 y = y.to(device)
                 z = torch.randn(x.size(0), args.noise_dim, 1, 1).to(device)
-                
+
                 self.EC_optimizer.zero_grad()
-                
+
                 E = self.net["extractor"](x)
                 EC = self.net["classifier"](E)
                 EC_loss = self.CE_criterion(EC, y)
-                
+
                 G = self.net["generator"](z, y).detach()
                 if args.distance == "mse":
                     EG_distance = self.MSE_criterion(E, G)
@@ -162,43 +159,43 @@ class Client():
                     EG_distance = 1 - self.COS_criterion(E, G).mean()
                 elif args.distance == "none":
                     EG_distance = 0
-                p = min(current_round/50, 1.)
-                gamma = 2 / (1 + np.exp(-10*p)) - 1
+                p = min(current_round / 50, 1.)
+                gamma = 2 / (1 + np.exp(-10 * p)) - 1
                 EG_distance = gamma * EG_distance
-  
+
                 (EC_loss + EG_distance).backward()
                 self.EC_optimizer.step()
                 EC_loss_meter.update(EC_loss.item())
                 EG_distance_meter.update(EG_distance.item())
-                
+
             self.frozen_net(["extractor", "classifier"], True)
 
             EC_loss = EC_loss_meter.get()
             EG_distance = EG_distance_meter.get()
             EC_acc = self.local_val()
-            logger.info("Client:[%2d], Epoch:[%2d], EC_loss:%2.6f, EG_distance:%2.6f, EC_acc:%2.6f" % (self.id, epoch, EC_loss, EG_distance, EC_acc))
-            
-            
+            logger.info("Client:[%2d], Epoch:[%2d], EC_loss:%2.6f, EG_distance:%2.6f, EC_acc:%2.6f" % (
+                self.id, epoch, EC_loss, EG_distance, EC_acc))
+
         logger.info("Training Client %2d's DG Network Start!" % self.id)
         ED_loss_meter = AvgMeter()
         GD_loss_meter = AvgMeter()
         G_loss_meter = AvgMeter()
         G_div_meter = AvgMeter()
-        
+
         for epoch in range(args.gan_epoch):
             ED_loss_meter.reset()
             GD_loss_meter.reset()
             G_loss_meter.reset()
             G_div_meter.reset()
-            
+
             self.frozen_net(["generator", "discriminator"], False)
-            
+
             for batch, (x, y) in enumerate(self.trainloader):
-                if x.size(0)%2 == 1:
+                if x.size(0) % 2 == 1:
                     x = torch.cat([x, x[:1]], dim=0)
                     y = torch.cat([y, y[:1]], dim=0)
-                split_size = int(x.size(0)/2)
-                
+                split_size = int(x.size(0) / 2)
+
                 if args.add_noise:
                     x += add_gaussian_noise(x, mean=0., std=self.noise_std)
                 x = x.to(device)
@@ -225,7 +222,6 @@ class Client():
                     ED_loss_meter.update(ED_loss.item())
                     GD_loss_meter.update(GD_loss.item())
 
-
                 # train generator with diversity
                 def train_generator_with_diversity(y, z):
                     self.G_optimizer.zero_grad()
@@ -246,19 +242,17 @@ class Client():
                     self.G_optimizer.step()
                     G_loss_meter.update(G_loss.item())
                     G_div_meter.update(G_div.item())
-                    
+
                 train_discriminator(x, y, z)
                 train_generator_with_diversity(y, z)
 
             self.frozen_net(["generator", "discriminator"], True)
-            
+
             ED_loss = ED_loss_meter.get()
             GD_loss = GD_loss_meter.get()
             G_loss = G_loss_meter.get()
             G_div = G_div_meter.get()
             GC_acc = self.compute_gan_acc()
-            logger.info("Client:[%2d], Epoch:[%2d], ED_loss:%2.6f, GD_loss:%2.6f, G_loss:%2.6f, G_div:%2.6f, GC_acc:%2.6f"
-                    % (self.id, epoch, ED_loss, GD_loss, G_loss, G_div, GC_acc))
-
-        if args.parallel:
-            self.save_client()
+            logger.info(
+                "Client:[%2d], Epoch:[%2d], ED_loss:%2.6f, GD_loss:%2.6f, G_loss:%2.6f, G_div:%2.6f, GC_acc:%2.6f"
+                % (self.id, epoch, ED_loss, GD_loss, G_loss, G_div, GC_acc))

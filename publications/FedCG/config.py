@@ -1,15 +1,17 @@
-import os
 import argparse
-import logging
 import datetime
+import logging
+import os
+
 import torch
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--algorithm', type=str, default="fedavg",
-                    choices=["local", "fedavg", "fedsplit", "fedprox", "fedgen", "feddf", "fedgd", "fedgd_w"])
-parser.add_argument('--dataset', type=str, default="fmnist", choices=["fmnist", "digit", "office", "cifar", "domainnet"])
+                    choices=["local", "fedavg", "fedsplit", "fedprox", "fedgen", "feddf", "fedcg", "fedcg_w"])
+parser.add_argument('--dataset', type=str, default="fmnist",
+                    choices=["fmnist", "digit", "office", "cifar", "domainnet"])
 parser.add_argument('--model', type=str, default="lenet5", choices=["lenet5", "resnet18"])
 parser.add_argument('--distance', type=str, default="mse", choices=["none", "mse", "cos"])
 
@@ -35,13 +37,11 @@ parser.add_argument('--early_stop_rounds', type=int, default=20,
 parser.add_argument('--global_epoch', type=int, default=20, help="the epochs for server's training (default: 20)")
 parser.add_argument('--global_iter_per_epoch', type=int, default=100,
                     help="the number of iteration per epoch for server training (default: 100)")
-parser.add_argument('--parallel', dest='parallel', action='store_true', default=False,
-                    help="whether training clients' model parallelly")
 parser.add_argument('--add_noise', dest='add_noise', action='store_true', default=False,
                     help="whether adding noise to image")
 parser.add_argument('--noise_std', type=float, default=1., help="std for gaussian noise added to image(default: 1.)")
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
-parser.add_argument('--data_dir', type=str, required=False, default="../data/", help="Data directory path")
+parser.add_argument('--data_dir', type=str, default="./data/", help="Data directory path")
 
 # args = parser.parse_args()
 args = parser.parse_known_args()[0]
@@ -82,11 +82,11 @@ elif args.model == "resnet18":
     args.feature_num = 128
     args.feature_size = 28
 
-
-if args.algorithm == "fedgd" or args.algorithm == "fedgd_w":
-    args.name = args.algorithm + '_' + args.dataset+str(args.n_clients) + '_' + args.model + '_' + args.distance + '_' + str(args.seed)
+if args.algorithm == "fedcg" or args.algorithm == "fedcg_w":
+    args.name = args.algorithm + '_' + args.dataset + str(
+        args.n_clients) + '_' + args.model + '_' + args.distance + '_' + str(args.seed)
 else:
-    args.name = args.algorithm + '_' + args.dataset+str(args.n_clients) + '_' + args.model + '_' + str(args.seed)
+    args.name = args.algorithm + '_' + args.dataset + str(args.n_clients) + '_' + args.model + '_' + str(args.seed)
 args.dir = 'experiments/' + 'bs' + str(args.batch_size) + 'lr' + str(args.lr) + 'wd' + str(args.weight_decay)
 args.checkpoint_dir = os.path.join(args.dir, args.name, 'checkpoint')
 os.makedirs(args.checkpoint_dir, exist_ok=True)
@@ -105,5 +105,5 @@ consoleHandler.setFormatter(formatter)
 fileHandler.setFormatter(formatter)
 logger.addHandler(fileHandler)
 logger.addHandler(consoleHandler)
-
-torch.cuda.set_device(args.gpu)
+if torch.cuda.is_available():
+    torch.cuda.set_device(args.gpu)
