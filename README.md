@@ -1,6 +1,6 @@
-# Federated Learning Research at Webank AI
+# Trustworthy Federated Learning Research
 
-This repository contains research projects in federated learning from Webank AI group. It includes:
+This repository contains research works and projects on trustworthy federated learning. It includes:
 
 1. [Datasets](#datasets). Preprocessing codes of datasets we used and developed for federated learning research. 
 2. [Publications](#publications). Implementation codes of our publications.
