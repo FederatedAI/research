@@ -2,13 +2,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from models import Classifier, Extractor
-from utils import AvgMeter, add_gaussian_noise, set_seed
-import copy
 
 from config import args, logger, device
+from models import Classifier, Extractor
+from utils import AvgMeter, add_gaussian_noise, set_seed
 
 
 class Server():
@@ -18,7 +16,6 @@ class Server():
         self.dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, num_workers=0, pin_memory=True)
         self.data_size = len(dataset)
         logger.info("server, data_size:%4d" % (self.data_size))
-
 
         self.weights = []
         for client in clients:
@@ -74,9 +71,6 @@ class Server():
             torch.save(optim_dict, args.checkpoint_dir + "/client" + str(i) + ".pkl")
 
     def receive(self, models):
-        if args.parallel:
-            self.load_client()
-            
         for model in models:
             avg_param = {}
             params = []
@@ -94,9 +88,6 @@ class Server():
             global_param = self.global_net[model].state_dict()
             for client in self.clients:
                 client.net[model].load_state_dict(global_param)
-                
-        if args.parallel:
-            self.save_client()
 
     def compute_aggregate_acc(self):
         correct, total = 0, 0
@@ -115,7 +106,7 @@ class Server():
 
     def global_train(self):
         set_seed(args.seed)
-        
+
         logger.info("Training Server's Network Start!")
         distill_loss_meter = AvgMeter()
 
@@ -123,16 +114,16 @@ class Server():
         logger.info("after average client acc:%2.6f" % after_average_acc)
 
         self.frozen_net(["extractor", "classifier"], False)
-      
+
         for epoch in range(args.global_epoch):
             distill_loss_meter.reset()
-            
+
             for batch, (x, y) in enumerate(self.dataloader):
                 x = x.to(device)
                 y = y.to(device)
-                
+
                 self.EC_optimizer.zero_grad()
-                
+
                 global_feat = self.global_net["extractor"](x)
                 global_pred = self.global_net["classifier"](global_feat)
                 q = torch.log_softmax(global_pred, -1)
@@ -143,14 +134,14 @@ class Server():
                     p += self.weights[i] * local_pred
                 p = torch.softmax(p, -1).detach()
                 distill_loss = self.KL_criterion(q, p)
-                
+
                 distill_loss.backward()
                 self.EC_optimizer.step()
                 distill_loss_meter.update(distill_loss.item())
 
             distill_loss = distill_loss_meter.get()
             logger.info("Server Epoch:[%2d], distill_loss:%2.6f" % (epoch, distill_loss))
-        
+
         self.frozen_net(["extractor", "classifier"], True)
 
         after_distill_acc = self.compute_aggregate_acc()

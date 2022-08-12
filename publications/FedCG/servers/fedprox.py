@@ -1,14 +1,10 @@
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import DataLoader
-from models import Classifier, Extractor
-from utils import AvgMeter, add_gaussian_noise, set_seed
-import copy
 
 from config import args, logger, device
+from models import Classifier, Extractor
+from utils import set_seed
 
 
 class Server():
@@ -70,9 +66,7 @@ class Server():
             torch.save(optim_dict, args.checkpoint_dir + "/client" + str(i) + ".pkl")
 
     def receive(self, models):
-        if args.parallel:
-            self.load_client()
-            
+
         for model in models:
             avg_param = {}
             params = []
@@ -90,6 +84,3 @@ class Server():
             global_param = self.global_net[model].state_dict()
             for client in self.clients:
                 client.net[model].load_state_dict(global_param)
-                
-        if args.parallel:
-            self.save_client()

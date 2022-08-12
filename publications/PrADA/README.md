@@ -1,5 +1,7 @@
 # PrADA: Privacy-preserving Federated Adversarial Domain Adaption over Feature Group for Interpretability
 
+![prada.jpg](figs/prada.png)
+
 We walk through steps of running experiments on Census Income data. Experiments on PPD loan default follow the same procedure.
 
 
@@ -35,7 +37,7 @@ census_data_creation = {
 
 Then, run:
 
-```python
+```shell
 python census_prepare_data.py
 ```
 
@@ -271,3 +273,20 @@ Go to directory: **prada/experiments/income_census/**
 python test_census_target.py --task_id 20210731_census_fg_adapt_all4000pos004_intrFalse_lr0.0005_bs128_me600_ts1627682125@target_20210731_rt_glr_lr0.0008_bs128_ts1627683284 --model_tag fg
 ```
 
+### 3 Citation
+If you find this work useful for your research, please kindly cite our paper
+```
+@article {kang2022prada,
+author = {Y. Kang and Y. He and J. Luo and T. Fan and Y. Liu and Q. Yang},
+journal = {IEEE Transactions on Big Data},
+title = {Privacy-preserving Federated Adversarial Domain Adaptation over Feature Groups for Interpretability},
+year = {2022},
+number = {01},
+issn = {2332-7790},
+pages = {1-12},
+doi = {10.1109/TBDATA.2022.3188292},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {jul}
+}
+```
