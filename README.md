@@ -8,17 +8,7 @@ This repository contains research works and projects on trustworthy federated le
 
 # Federated Learning Portal
 
-This [webportal](http://federated-learning.org/) keeps track of books, workshops, conference special tracks, journal special issues, standardization effort and other notable events related to the field of Federated Learning (FL).
-
-## NEWS
-
-<b>2022-05-13 </b> [#Call for papers. International Workshop on Trustworthy Federated Learning in Conjunction with IJCAI 2022 (FL-IJCAI'22))
-](https://federated-learning.org/fl-ijcai-2022/)
-
-<b>2022-01-15 </b> [#Call for papers. https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning
-](https://www.computer.org/digital-library/journals/bd/call-for-papers-special-issue-on-trustable-verifiable-and-auditable-federated-learning)
-
-
+This [Federated Learning Portal](http://federated-learning.org/) keeps track of books, workshops, conference special tracks, journal special issues, standardization effort and other notable events related to the field of Federated Learning (FL).
 
 
 ## Datasets
