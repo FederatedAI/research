@@ -6,7 +6,7 @@ This repository contains research works and projects on trustworthy federated le
 2. [Publications](#publications). Implementation codes of our publications.
 3. [Projects](#projects). Other projects in federated learning.
 
-# Federated Learning Portal
+## Federated Learning Portal
 
 This [Federated Learning Portal](http://federated-learning.org/) keeps track of books, workshops, conference special tracks, journal special issues, standardization effort and other notable events related to the field of Federated Learning (FL).
 
