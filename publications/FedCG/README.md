@@ -6,9 +6,10 @@
 
 更具体地说，FedCG将每个客户端的本地网络分解为私有特征提取器（extractor）和公共分类器（classifier），并将特征提取器保留在本地以保护隐私。每个客户端用一个生成器（generator）来拟合特征提取器的输出表征。FedCG的新颖之处在于它与服务器共享客户端的生成器而不是提取器，以聚合客户端的共享知识，提高模型性能 (如图1)。
 
-![img](.\figs\clip_image002.png)
-
-<center>图1： FedCG 架构概览</center>
+<p align="center">
+  <img src="figs/clip_image002.png"/>
+  <center>图1：FedCG 架构概览</center>
+</p>
 
 
 
@@ -20,17 +21,19 @@
 
 FedCG的训练步骤分为两阶段客户端更新（如图2）和服务器端聚合（如图3）。在两阶段客户端更新中，我们首先利用从服务器下发的全局生成器来优化分类网络（包括特征提取器和分类器），然后再训练一个本地生成器来拟合特征提取器的输出表征 $G(z,y) \approx F(x|y)$  我们用这个本地生成器来代替特征提取器, 在服务器端聚合所有客户端的知识同时保护数据隐私。
 
-![img](figs\clip_image006.jpg)
+<p align="center">
+  <img src="figs/clip_image006.jpg"/>
+  <center>图2：FedCG 客户端训练示意图。</center>
+</p>
 
-<center>图2： FedCG 客户端训练示意图。</center>
 
- 
 
 在服务器端聚合中，我们通过知识蒸馏的方式聚合一个公共分类器 $C_g$ 和一个公共生成器 $G_g$ 。然后，服务器下发公共分类器和公共生成器给每个客户端。
 
-![img](figs\clip_image008.jpg)
-
-<center>图3： FedCG服务器端训练示意图。</center>
+<p align="center">
+  <img src="figs/clip_image008.jpg"/>
+  <center>图3：FedCG服务器端训练示意图。</center>
+</p>
 
 
 
@@ -38,27 +41,26 @@ FedCG的训练步骤分为两阶段客户端更新（如图2）和服务器端�
 
 如表1所示，总体来说，FedCG 在4个数据集 (共6个数据集) 上取得最高准确率. 在IID 场景 : 在 FMNIST 上达到最高准确率。在Non-IID 场景: 在 3 个数据集上都达到最优，特别是在 Office 数据集上，FedCG比第二高准确率的 FedProx 高出 4.35% 。
 
-<center>表1： FedAVG，FedSPLIT和FedCG的模型性能与隐私保护效果对比</center>
+ <p align="center">
+  <img src="figs/clip_image010.jpg"/>
+  <center>表1：FedCG与基线在Top-1精度上的比较。粗体字表示最好的性能。*表示没有测量结果。括号内的数字表示客户端数量。</center>
+</p>
 
-![表格  描述已自动生成](figs\clip_image010.jpg)
 
- 
 
 IID 场景: 所有的FL方法在所有的客户端上都以较大的优势超过了本地模型。在FMNIST数据集上，FedCG在所有客户端的表现都是最好的（见图4（a））。FedCG的表现与那些共享所有本地模型的FL方法相差不大（见图4（b））。Non-IID 场景: 在所有3个Non-IID数据集中，没有一种FL方法能在每个客户上都击败本地模型（见图4（c），图4（d）和图4（e））。 FedCG在最多的客户端上取得了最好的效果。同时也是击败local最多的算法。
-
-![img](figs\clip_image012.png)
-
-<center>图4：在5个数据集上的实验中，在每个客户端上FEDAVG、FEDPROX、FEDDF、FEDSPLIT和FEDCG（红色）与LOCAL相比，都取得了精度提高。纵轴是准确性方面的性能差异（%）。正的（负的）收益意味着FL方法比LOCAL方法取得了 比LOCAL模型更好（更差）。</center>
-
+ <p align="center">
+  <img src="figs/clip_image012.png"/>
+  <center>图4：在5个数据集上的实验中，在每个客户端上FEDAVG、FEDPROX、FEDDF、FEDSPLIT和FEDCG（红色）与LOCAL相比，都取得了精度提高。纵轴是准确性方面的性能差异（%）。正的（负的）收益意味着FL方法比LOCAL方法取得了 比LOCAL模型更好（更差）。</center>
+</p>
  
 
 如表2所示，隐私分析的实验结果表明，使用FedAvg，随着 DP 噪声添加得越多，能更好的保护隐私，但会导致较大的准确率损失；使用FedSplit，能保护隐私, 但有较大的准确率损失；使用FedCG，能在保护隐私的条件下，取得一个较高的准确率。
 
-<center>表2： FedAVG，FedSPLIT和FedCG的模型性能与隐私保护效果对比</center>
-
-![img](figs\clip_image014.jpg)
-
- 
+<p align="center">
+  <img src="figs/clip_image014.jpg"/>
+  <center>表2： FedAVG，FedSPLIT和FedCG的模型性能与隐私保护效果对比</center>
+</p>
 
 ### 总结和后续工作
 
