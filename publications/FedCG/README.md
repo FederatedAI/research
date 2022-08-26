@@ -20,7 +20,7 @@
 
 FedCG的训练步骤分为两阶段客户端更新（如图2）和服务器端聚合（如图3）。在两阶段客户端更新中，我们首先利用从服务器下发的全局生成器来优化分类网络（包括特征提取器和分类器），然后再训练一个本地生成器来拟合特征提取器的输出表征 $G(z,y) \approx F(x|y)$  我们用这个本地生成器来代替特征提取器, 在服务器端聚合所有客户端的知识同时保护数据隐私。
 
-![img](.\figs\clip_image006.jpg)
+![img](figs\clip_image006.jpg)
 
 <center>图2： FedCG 客户端训练示意图。</center>
 
@@ -28,7 +28,7 @@ FedCG的训练步骤分为两阶段客户端更新（如图2）和服务器端�
 
 在服务器端聚合中，我们通过知识蒸馏的方式聚合一个公共分类器 $C_g$ 和一个公共生成器 $G_g$ 。然后，服务器下发公共分类器和公共生成器给每个客户端。
 
-![img](.\figs\clip_image008.jpg)
+![img](figs\clip_image008.jpg)
 
 <center>图3： FedCG服务器端训练示意图。</center>
 
@@ -40,13 +40,13 @@ FedCG的训练步骤分为两阶段客户端更新（如图2）和服务器端�
 
 <center>表1： FedAVG，FedSPLIT和FedCG的模型性能与隐私保护效果对比</center>
 
-![表格  描述已自动生成](.\figs\clip_image010.jpg)
+![表格  描述已自动生成](figs\clip_image010.jpg)
 
  
 
 IID 场景: 所有的FL方法在所有的客户端上都以较大的优势超过了本地模型。在FMNIST数据集上，FedCG在所有客户端的表现都是最好的（见图4（a））。FedCG的表现与那些共享所有本地模型的FL方法相差不大（见图4（b））。Non-IID 场景: 在所有3个Non-IID数据集中，没有一种FL方法能在每个客户上都击败本地模型（见图4（c），图4（d）和图4（e））。 FedCG在最多的客户端上取得了最好的效果。同时也是击败local最多的算法。
 
-![img](.\figs\clip_image012.png)
+![img](figs\clip_image012.png)
 
 <center>图4：在5个数据集上的实验中，在每个客户端上FEDAVG、FEDPROX、FEDDF、FEDSPLIT和FEDCG（红色）与LOCAL相比，都取得了精度提高。纵轴是准确性方面的性能差异（%）。正的（负的）收益意味着FL方法比LOCAL方法取得了 比LOCAL模型更好（更差）。</center>
 
@@ -56,7 +56,7 @@ IID 场景: 所有的FL方法在所有的客户端上都以较大的优势超过
 
 <center>表2： FedAVG，FedSPLIT和FedCG的模型性能与隐私保护效果对比</center>
 
-![img](.\figs\clip_image014.jpg)
+![img](figs\clip_image014.jpg)
 
  
 
