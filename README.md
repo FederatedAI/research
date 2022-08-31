@@ -37,7 +37,7 @@ Our publications are categorized  as below:
 ### Highlight
 | Title| Code| Description|
 |-----|-----|-----|
-|[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||Under review, New theorem for secure federated learning|
+|[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|
 |[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedIPR)|IEEE Transactions on Pattern Analysis and Machine Intelligence 2022|
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021, widely-used federated tree-boosting algorithm|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|
@@ -78,7 +78,7 @@ Our publications are categorized  as below:
 |-----|-----|-----|
 |[FLASHE: Additively Symmetric Homomorphic Encryption for Cross-Silo Federated Learning](https://arxiv.org/abs/2109.00675)| |Arxiv 2021|
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|
-|[FedBCD: A Communication-Efficient Collaborative Learning Framework for Distributed Features](https://ieeexplore.ieee.org/document/9855231)|[code](https://github.com/yankang18/FedBCD)|IEEE Transactions on Signal Processing|
+|[FedBCD: A Communication-Efficient Collaborative Learning Framework for Distributed Features](https://ieeexplore.ieee.org/document/9855231)|[code](https://github.com/yankang18/FedBCD)|IEEE Transactions on Signal Processing 2022|
 |[RPN: A Residual Pooling Network for Efficient Federated Learning](https://arxiv.org/abs/2001.08600)| |ECAI 2020|
 |[Secure and Efficient Federated Transfer Learning](https://arxiv.org/abs/1910.13271)| |IEEE BigData 2019|
 
