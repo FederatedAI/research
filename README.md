@@ -36,7 +36,7 @@ Our publications are categorized  as below:
 
 ### Highlight
 | Title| Code| Description| semanticscholar Citation |
-|-----|-----|-----|
+|-----|-----|-----|-----|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||preprint|. |
 |[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|. |
 |[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedIPR)|IEEE Transactions on Pattern Analysis and Machine Intelligence 2022|. |
