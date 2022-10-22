@@ -117,7 +117,7 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Toward Responsible AI: An Overview of Federated Learning for User-centered Privacy-preserving Computing](https://dl.acm.org/doi/abs/10.1145/3485875)| |ACM TIST 2022|
-|[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IJCAI FL workshop 2021|
+|[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IEEE Transactions on Neural Networks and Learning Systems|
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)| |Foundations and Trends in Machine Learning 2021|
 |[Threats to Federated Learning: A Survey](https://arxiv.org/abs/2003.02133)| |IJCAI FL workshop 2020|
 |[Towards Utilizing Unlabeled Data in Federated Learning: A Survey and Prospective](https://arxiv.org/abs/2002.11545)| |ArXiv 2020|
