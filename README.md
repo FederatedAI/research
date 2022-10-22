@@ -53,11 +53,11 @@ Our publications are categorized  as below:
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)| |ICML FL workshop 2020|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020|
 |[FedCVT: Semi-supervised Vertical Federated Learning with MultiView Training](https://arxiv.org/abs/2008.10838) | |ACM TIST 2022|
-|[Federated Transfer Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/1910.06001)|[code](https://github.com/FederatedAI/research/tree/main/publications/FTRL)| |
+|[Federated Transfer Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/1910.06001)|[code](https://github.com/FederatedAI/research/tree/main/publications/FTRL)| Federated and Transfer Learning Book |
 |[Privacy-preserving Heterogeneous Federated Transfer Learning](https://ieeexplore.ieee.org/document/9005992)| |IEEE BigData 2019|
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)| |Knowledge-Based Systems|
-|[Cross-silo Federated Neural Architecture Search for Heterogeneous and Cooperative Systems](https://arxiv.org/pdf/2101.11896.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/ss_vfnas)|Self-supervised Vertical Federated NAS|
+|[Cross-silo Federated Neural Architecture Search for Heterogeneous and Cooperative Systems](https://arxiv.org/pdf/2101.11896.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/ss_vfnas)|Federated and Transfer Learning Book|
 
 ### Security and Privacy
 | Title| Code| Description|
