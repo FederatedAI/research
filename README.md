@@ -23,9 +23,10 @@ This [Federated Learning Portal](http://federated-learning.org/) keeps track of 
 ## Publications
 Our publications are categorized  as below:
 
-- [<b>Highlight</b>](#highlight). Our newly and highly interesting works.
-- [<b>Paradigm</b>](#paradigm). Various types of federated learning schemes. 
-- [<b>Security</b>](#Privacy). Data privacy and model security.
+- [<b>Highlight</b>](#highlight). Papers that have high impact or we recommend to read.
+- [<b>Security and Privacy</b>](#Privacy). Security and privacy attacks and defenses.
+- [<b>Intellectual Property Protection</b>](#Privacy). Intellectual property protection and ownership verification (on model or data).
+- [<b>Effectiveness</b>](#paradigm). Various algorithms that aim to improve the effectiveness of FL. 
 - [<b>Efficiency</b>](#Efficiency). Communication and computation efficiency, data distribution heterogeneity, system interpretability and Incentive Mechanism.  
 - [<b>Incentive</b>](#Incentive). Incentive Mechanism.  
 - [<b>Application</b>](#application). Federated learning in real-world applications.
