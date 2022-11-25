@@ -58,8 +58,29 @@ Our publications are categorized  as below:
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)| |ACM TIST 2019, the 3rd most cited federated learning paper|
 
+### Security and Privacy
+| Title| Code| Description|
+|-----|-----|-----|
+|[A Framework for Evaluating Privacy-Utility Trade-off in Vertical Federated Learning](https://arxiv.org/pdf/2209.03885.pdf) | | preprint |
+|[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedCG)|IJCAI2022|
+|[Defending Batch-Level Label Inference and Replacement Attacks in Vertical Federated Learning](https://www.computer.org/csdl/journal/bd/5555/01/09833321/1F8uKhxrvNe)|[code](https://github.com/FLAIR-THU/TrustworthyFederatedLearning)|IEEE Transactions on Big Data|
+|[Secure Federated Matrix Factorization](https://arxiv.org/abs/1906.05108)| |IEEE Intelligent Systems 2020|
+|[Privacy-Preserving Deep Learning with SPDZ](https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf)| |The AAAI Workshop on PPAI|
+|[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)| |USENIX 2020 ATC|
+|[Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587)| |IJCAI 2020 FL workshop|
+|[Dynamic backdoor attacks against federated learning](https://arxiv.org/abs/2011.07429)| | |
+|[Rethinking Privacy Preserving Deep Learning: How to Evaluate and Thwart Privacy Attacks](https://link.springer.com/chapter/10.1007/978-3-030-63076-8_3)| |Springer Book 2020|
+|[Abnormal client behavior detection in federated learning](https://arxiv.org/abs/1910.09933)| |NIPS workshop 2019|
 
-### Paradigm
+### Intellectual Property Protection 
+| Title| Code| Description|
+|-----|-----|-----|
+|[FedTracker: Furnishing Ownership Verification and Traceability for Federated Learning Model](https://arxiv.org/pdf/2211.07160.pdf)||preprint|
+|[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||IEEE TPAMI, 2022|
+|[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)| |CVPR 2021|
+|[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NIPS 2019|
+
+### Effectiveness
 | Title| Code| Description|
 |-----|-----|-----|
 |[A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning](https://arxiv.org/abs/2208.08934) | |Preprint|
@@ -71,23 +92,6 @@ Our publications are categorized  as below:
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021|
 |[Multi-Component Transfer Metric Learning for handling unrelated source domain samples](https://www.sciencedirect.com/science/article/abs/pii/S0950705120303877)| |Knowledge-Based Systems|
 |[Cross-silo Federated Neural Architecture Search for Heterogeneous and Cooperative Systems](https://arxiv.org/pdf/2101.11896.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/ss_vfnas)|Federated and Transfer Learning Book|
-
-### Security and Privacy
-| Title| Code| Description|
-|-----|-----|-----|
-|[A Framework for Evaluating Privacy-Utility Trade-off in Vertical Federated Learning](https://arxiv.org/pdf/2209.03885.pdf) | | preprint |
-|[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedCG)|IJCAI2022|
-|[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||IEEE Transactions on Pattern Analysis and Machine Intelligence|
-|[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)| |CVPR 2021|
-|[Defending Batch-Level Label Inference and Replacement Attacks in Vertical Federated Learning](https://www.computer.org/csdl/journal/bd/5555/01/09833321/1F8uKhxrvNe)|[code](https://github.com/FLAIR-THU/TrustworthyFederatedLearning)|IEEE Transactions on Big Data|
-|[Secure Federated Matrix Factorization](https://arxiv.org/abs/1906.05108)| |IEEE Intelligent Systems 2020|
-|[Privacy-Preserving Deep Learning with SPDZ](https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_3.pdf)| |The AAAI Workshop on PPAI|
-|[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)| |USENIX 2020 ATC|
-|[Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587)| |IJCAI 2020 FL workshop|
-|[Dynamic backdoor attacks against federated learning](https://arxiv.org/abs/2011.07429)| | |
-|[Rethinking Privacy Preserving Deep Learning: How to Evaluate and Thwart Privacy Attacks](https://link.springer.com/chapter/10.1007/978-3-030-63076-8_3)| |Springer Book 2020|
-|[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NIPS 2019|
-|[Abnormal client behavior detection in federated learning](https://arxiv.org/abs/1910.09933)| |NIPS workshop 2019|
 
 ### Efficiency
 | Title| Code| Description|
