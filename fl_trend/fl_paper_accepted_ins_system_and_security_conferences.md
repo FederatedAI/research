@@ -76,7 +76,7 @@
 
 
 
-<img src="./figs/Security_conf_fl_topics.png" alt="Security_conf_fl_topics" style="zoom:60%;" />
+<img src="./figs/security_conf_fl_topics.png" alt="Security_conf_fl_topics" style="zoom:60%;" />
 
 
 
