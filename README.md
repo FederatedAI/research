@@ -116,7 +116,7 @@ Our publications are categorized  as below:
 ### Application
 | Title| Code| Description|
 |-----|-----|-----|
-|Amalur: Data Integration Meets Machine Learning| To appear |ICDE 2023 (Vision paper)|
+|[Amalur: Data Integration Meets Machine Learning](https://arxiv.org/abs/2205.09681)| |ICDE 2023 (Vision paper)|
 |[StarFL: Hybrid Federated Learning Architecture for Smart Urban Computing](https://dl.acm.org/doi/abs/10.1145/3467956)| |ACM TIST 2021|
 |[Variation-Aware Federated Learning with Multi-Source Decentralized Medical Image Data](https://ieeexplore.ieee.org/document/9268161)| |IEEE Journal of Biomedical and Health Informatics 2020|
 |[Fedml: A research library and benchmark for federated machine learning](https://arxiv.org/abs/2007.13518)|[code](https://github.com/FedML-AI/FedML)|NeurIPS 2020 FL workshop|
