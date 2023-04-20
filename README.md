@@ -63,7 +63,7 @@ Our publications are categorized  as below:
 | Title| Code| Description|
 |-----|-----|-----|
 |[Achieving Provable Byzantine Fault-Tolerance in a Semi-honest Federated Learning Setting]() | to appear | PAKDD 2023 |
-|[FedPass: Privacy-Preserving Vertical Federated Deep Learning with Adaptive Obfuscation](https://arxiv.org/pdf/2301.12623.pdf) | | preprint |
+|[FedPass: Privacy-Preserving Vertical Federated Deep Learning with Adaptive Obfuscation](https://arxiv.org/pdf/2301.12623.pdf) | | IJCAI 2023 |
 |[A Framework for Evaluating Privacy-Utility Trade-off in Vertical Federated Learning](https://arxiv.org/abs/2209.03885) | | preprint |
 |[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedCG)|IJCAI 2022|
 |[Defending Batch-Level Label Inference and Replacement Attacks in Vertical Federated Learning](https://www.computer.org/csdl/journal/bd/5555/01/09833321/1F8uKhxrvNe)|[code](https://github.com/FLAIR-THU/TrustworthyFederatedLearning)|IEEE Transactions on Big Data|
