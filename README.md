@@ -64,7 +64,7 @@ Our publications are categorized  as below:
 ### Security and Privacy
 | Title| Code| Description|
 |-----|-----|-----|
-|[Achieving Provable Byzantine Fault-Tolerance in a Semi-honest Federated Learning Setting](https://dl.acm.org/doi/abs/10.1007/978-3-031-33377-4_32) | to appear | PAKDD 2023 |
+|[Achieving Provable Byzantine Fault-Tolerance in a Semi-honest Federated Learning Setting](https://dl.acm.org/doi/abs/10.1007/978-3-031-33377-4_32) |  | PAKDD 2023 |
 |[FedPass: Privacy-Preserving Vertical Federated Deep Learning with Adaptive Obfuscation](https://arxiv.org/pdf/2301.12623.pdf) | | IJCAI 2023 |
 |[A Framework for Evaluating Privacy-Utility Trade-off in Vertical Federated Learning](https://arxiv.org/abs/2209.03885) | | preprint |
 |[FedCG: Leverage Conditional GAN for Protecting Privacy and Maintaining Competitive Performance in Federated Learning](https://arxiv.org/abs/2111.08211)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedCG)|IJCAI 2022|
@@ -88,7 +88,7 @@ Our publications are categorized  as below:
 ### Effectiveness
 | Title| Code| Description|
 |-----|-----|-----|
-|[FedHSSL: A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning](https://arxiv.org/abs/2208.08934) | |Preprint|
+|[FedHSSL: A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning](https://arxiv.org/abs/2208.08934) | [code](https://github.com/jorghyq2016/FedHSSL) |Preprint|
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)| |ICML FL workshop 2020|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020|
 |[FedCVT: Semi-supervised Vertical Federated Learning with Cross-View Training](https://arxiv.org/abs/2008.10838) | |ACM TIST 2022|
