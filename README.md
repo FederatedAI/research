@@ -48,9 +48,11 @@ Our publications are categorized  as below:
 |[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NIPS 2019|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/5d3fd7275e5ce39d7ddae12894f5ca1377db6b01?fields=citationCount)](https://www.semanticscholar.org/paper/Rethinking-Deep-Neural-Network-Ownership-Embedding-Fan-Ng/5d3fd7275e5ce39d7ddae12894f5ca1377db6b01)|118| 
 |[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IEEE Transactions on Neural Networks and Learning Systems 2022 |[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/481dd25896ac531707870c9b8c179cce20013401?fields=citationCount)](https://www.semanticscholar.org/paper/Towards-Personalized-Federated-Learning-Tan-Yu/481dd25896ac531707870c9b8c179cce20013401)|115| 
 
-### Highlight
+### Highlight Paper
 | Title| Code| Description| 
 |-----|-----|-----|
+|[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||Preprint|
+|[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
 |[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|
 |[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)|[code](https://github.com/FederatedAI/research/tree/main/publications/FedIPR)|IEEE Transactions on Pattern Analysis and Machine Intelligence 2022|
