@@ -28,7 +28,8 @@ Our publications are categorized  as below:
 - [<b>Intellectual Property Protection</b>](#Intellectual). Intellectual property protection and ownership verification (on model or data).
 - [<b>Effectiveness</b>](#Effectiveness). Various algorithms that aim to improve the effectiveness of FL. 
 - [<b>Efficiency</b>](#Efficiency). Communication and computation efficiency.  
-- [<b>Incentive</b>](#Incentive). Incentive Mechanism.  
+- [<b>Incentive</b>](#Incentive). Incentive Mechanism.
+- [<b>Theory</b>](#Theory). Theoretical work of federated learning.  
 - [<b>Application</b>](#application). Federated learning in real-world applications.
 - [<b>Dataset</b>](#dataset). Datasets for federated learning research.
 - [<b>Survey</b>](#survey). Survey on various topics of federated learning.
@@ -115,6 +116,14 @@ Our publications are categorized  as below:
 |[A Sustainable Incentive Scheme for Federated Learning](https://ieeexplore.ieee.org/document/9069185)| |IEEE Intelligent Systems |
 |[A multi-player game for studying federated learning incentive schemes](https://www.ijcai.org/Proceedings/2020/769)| |IJCAI 2020|
 
+### Theory
+| Title| Code| Description| 
+|-----|-----|-----|
+|[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||Preprint|
+|[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
+|[A Game-theoretic Framework for Federated Learning](https://arxiv.org/abs/2304.05836)||Preprint|
+|[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
+|[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|
 
 ### Application
 | Title| Code| Description|
