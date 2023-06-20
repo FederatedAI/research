@@ -119,7 +119,6 @@ Our publications are categorized  as below:
 ### Theory
 | Title| Code| Description| 
 |-----|-----|-----|
-|[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||Preprint|
 |[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
 |[A Game-theoretic Framework for Federated Learning](https://arxiv.org/abs/2304.05836)||Preprint|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
