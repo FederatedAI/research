@@ -52,6 +52,7 @@ Our publications are categorized  as below:
 ### Highlight Paper
 | Title| Code| Description| 
 |-----|-----|-----|
+|[Grounding Foundation Models through Federated Transfer Learning: A General Framework](https://arxiv.org/abs/2311.17431)||Preprint|
 |[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||Preprint|
 |[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
@@ -147,7 +148,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
-|[Vertical Federated Learning](https://arxiv.org/abs/2211.12814)| |Preprint|
+|[Vertical Federated Learning: Concepts, Advances, and Challenges](https://arxiv.org/abs/2211.12814)| |Preprint|
 |[A Survey on Heterogeneous Federated Learning](https://arxiv.org/abs/2210.04505)| |Preprint|
 |[Toward Responsible AI: An Overview of Federated Learning for User-centered Privacy-preserving Computing](https://dl.acm.org/doi/abs/10.1145/3485875)| |ACM TIST 2022|
 |[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IEEE Transactions on Neural Networks and Learning Systems|
