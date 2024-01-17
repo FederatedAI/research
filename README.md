@@ -148,7 +148,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
-|[Vertical Federated Learning: Concepts, Advances, and Challenges](https://arxiv.org/abs/2211.12814)| |Preprint|
+|[Vertical Federated Learning: Concepts, Advances, and Challenges](https://arxiv.org/abs/2211.12814)| |TKDE 2023|
 |[A Survey on Heterogeneous Federated Learning](https://arxiv.org/abs/2210.04505)| |Preprint|
 |[Toward Responsible AI: An Overview of Federated Learning for User-centered Privacy-preserving Computing](https://dl.acm.org/doi/abs/10.1145/3485875)| |ACM TIST 2022|
 |[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IEEE Transactions on Neural Networks and Learning Systems|
