@@ -42,7 +42,7 @@ Our publications are categorized  as below:
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)| |ACM TIST 2019, the 3rd most cited federated learning paper|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/c38e83a9d0fe7005183f3c5bedf32a23df1b579b?fields=citationCount)](https://www.semanticscholar.org/paper/Federated-Machine-Learning%3A-Concept-and-Yang-Liu/c38e83a9d0fe7005183f3c5bedf32a23df1b579b)| 2995	| 
 |[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)| |Foundations and Trends in Machine Learning 2021|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/07912741c6c96e6ad5b2c2d6c6c3b2de5c8a271b?fields=citationCount)](https://www.semanticscholar.org/paper/Advances-and-Open-Problems-in-Federated-Learning-Kairouz-McMahan/07912741c6c96e6ad5b2c2d6c6c3b2de5c8a271b)| 2711	| 
 |[SecureBoost: A Lossless Federated Learning Framework](https://arxiv.org/abs/1901.08755)|[code](https://github.com/FederatedAI/FATE/blob/master/python/federatedml/ensemble)|IEEE intelligent Systems 2021, widely-used federated tree-boosting algorithm, best paper award|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/f71687796caa7d2a5d68406b53b51cb9ed57f586?fields=citationCount)](https://www.semanticscholar.org/paper/SecureBoost%3A-A-Lossless-Federated-Learning-Cheng-Fan/f71687796caa7d2a5d68406b53b51cb9ed57f586)|333	|
-|[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/cc8379abcda8faa78e2c5e17deb96785ea447461?fields=citationCount)](https://www.semanticscholar.org/paper/A-Secure-Federated-Transfer-Learning-Framework-Liu-Kang/cc8379abcda8faa78e2c5e17deb96785ea447461)  |338	|
+|[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE Intelligent Systems 2020, the first federated transfer learning paper|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/cc8379abcda8faa78e2c5e17deb96785ea447461?fields=citationCount)](https://www.semanticscholar.org/paper/A-Secure-Federated-Transfer-Learning-Framework-Liu-Kang/cc8379abcda8faa78e2c5e17deb96785ea447461)  |338	|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/1de7dae4b03fb3ab1eeffc45d2fd761538962d5c?fields=citationCount)](https://www.semanticscholar.org/paper/FedVision%3A-An-Online-Visual-Object-Detection-by-Liu-Huang/1de7dae4b03fb3ab1eeffc45d2fd761538962d5c) |144	| 
 |[Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning](https://www.usenix.org/conference/atc20/presentation/zhang-chengliang)|[code](https://github.com/marcoszh/BatchCrypt)|2020 USENIX ATC 2020|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/c783cdc03a32e5094affa7eef710459aac599aaf?fields=citationCount)](https://www.semanticscholar.org/paper/BatchCrypt%3A-Efficient-Homomorphic-Encryption-for-Zhang-Li/c783cdc03a32e5094affa7eef710459aac599aaf)|261	|
 |[A Fairness-aware Incentive Scheme for Federated Learning](https://dl.acm.org/doi/abs/10.1145/3375627.3375840)| |AIES 2020|[![citation](https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/e64e685190357333513aa3bbaa7e446c7683bfbe?fields=citationCount)](https://www.semanticscholar.org/paper/A-Fairness-aware-Incentive-Scheme-for-Federated-Yu-Liu/e64e685190357333513aa3bbaa7e446c7683bfbe)|117	|
@@ -90,7 +90,7 @@ Our publications are categorized  as below:
 ### Effectiveness
 | Title| Code| Description|
 |-----|-----|-----|
-|[FedHSSL: A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning](https://arxiv.org/abs/2208.08934) | [code](https://github.com/jorghyq2016/FedHSSL) |Preprint|
+|[FedHSSL: A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning](https://arxiv.org/abs/2208.08934) | [code](https://github.com/jorghyq2016/FedHSSL) |IEEE Transactions on Big Data 2024|
 |[FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/abs/2005.11418)| |ICML FL workshop 2020|
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020|
 |[FedCVT: Semi-supervised Vertical Federated Learning with Cross-View Training](https://arxiv.org/abs/2008.10838) | |ACM TIST 2022|
@@ -121,7 +121,7 @@ Our publications are categorized  as below:
 | Title| Code| Description| 
 |-----|-----|-----|
 |[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
-|[A Game-theoretic Framework for Federated Learning](https://arxiv.org/abs/2304.05836)||Preprint|
+|[A Game-theoretic Framework for Federated Learning](https://arxiv.org/abs/2304.05836)||ACM TIST 2024|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
 |[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|
 
@@ -148,7 +148,7 @@ Our publications are categorized  as below:
 ### Survey
 | Title| Code| Description|
 |-----|-----|-----|
-|[Vertical Federated Learning: Concepts, Advances, and Challenges](https://arxiv.org/abs/2211.12814)| |TKDE 2023|
+|[Vertical Federated Learning: Concepts, Advances, and Challenges](https://arxiv.org/abs/2211.12814)| |TKDE 2024|
 |[A Survey on Heterogeneous Federated Learning](https://arxiv.org/abs/2210.04505)| |Preprint|
 |[Toward Responsible AI: An Overview of Federated Learning for User-centered Privacy-preserving Computing](https://dl.acm.org/doi/abs/10.1145/3485875)| |ACM TIST 2022|
 |[Towards Personalized Federated Learning](https://arxiv.org/abs/2103.00710)| |IEEE Transactions on Neural Networks and Learning Systems|
