@@ -24,9 +24,10 @@ This [Federated Learning Portal](http://federated-learning.org/) keeps track of 
 Our publications are categorized  as below:
 
 - [<b>Highlight</b>](#highlight). Papers that have high impact or we recommend to read.
+- [<b>FTL-FM</b>](#Security). Grounding foundation models via federated transfer learning.
 - [<b>Security and Privacy</b>](#Security). Security and privacy attacks and defenses.
 - [<b>Intellectual Property Protection</b>](#Intellectual). Intellectual property protection and ownership verification (on model or data).
-- [<b>Effectiveness</b>](#Effectiveness). Various algorithms that aim to improve the effectiveness of FL. 
+- [<b>Effectiveness</b>](#Effectiveness). Various algorithms aim to improve the effectiveness of FL. 
 - [<b>Efficiency</b>](#Efficiency). Communication and computation efficiency.  
 - [<b>Incentive</b>](#Incentive). Incentive Mechanism.
 - [<b>Theory</b>](#Theory). Theoretical work of federated learning.  
@@ -62,6 +63,13 @@ Our publications are categorized  as below:
 |[A Secure Federated Transfer Learning Framework](https://ieeexplore.ieee.org/document/9076003)|[code](https://github.com/FederatedAI/FATE/tree/develop-1.5/python/federatedml/transfer_learning/hetero_ftl)|IEEE intelligent Systems 2020, the first federated transfer learning paper|
 |[FedVision: An Online Visual Object Detection Platform Powered by Federated Learning](https://arxiv.org/abs/2001.06202)|[code](https://github.com/FederatedAI/FedVision)|AAAI 2020, Innovative Application of Artificial Intelligence Award from AAAI in 2020|
 |[Federated machine learning: Concept and applications](https://arxiv.org/abs/1902.04885)| |ACM TIST 2019, the 3rd most cited federated learning paper|
+
+### FTL-FM
+| Title| Code| Description|
+|-----|-----|-----|
+|[Grounding Foundation Models through Federated Transfer Learning: A General Framework](https://arxiv.org/abs/2311.17431)||Preprint|
+|[FATE-LLM: A Industrial Grade Federated Learning Framework for Large Language Models](https://arxiv.org/abs/2310.10049)||LLM@IJCAI'23|
+
 
 ### Security and Privacy
 | Title| Code| Description|
