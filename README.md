@@ -24,7 +24,7 @@ This [Federated Learning Portal](http://federated-learning.org/) keeps track of 
 Our publications are categorized  as below:
 
 - [<b>Highlight</b>](#highlight). Papers that have high impact or we recommend to read.
-- [<b>FTL-FM</b>](#Security). Grounding foundation models via federated transfer learning.
+- [<b>FTL-FM</b>](#FTL-FM). Grounding foundation models via federated transfer learning.
 - [<b>Security and Privacy</b>](#Security). Security and privacy attacks and defenses.
 - [<b>Intellectual Property Protection</b>](#Intellectual). Intellectual property protection and ownership verification (on model or data).
 - [<b>Effectiveness</b>](#Effectiveness). Various algorithms aim to improve the effectiveness of FL. 
