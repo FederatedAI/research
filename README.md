@@ -90,7 +90,7 @@ Our publications are categorized  as below:
 ### Intellectual Property Protection 
 | Title| Code| Description|
 |-----|-----|-----|
-|[FedTracker: Furnishing Ownership Verification and Traceability for Federated Learning Model](https://arxiv.org/pdf/2211.07160.pdf)||preprint|
+|[FedTracker: Furnishing Ownership Verification and Traceability for Federated Learning Model](https://arxiv.org/pdf/2211.07160.pdf)|| IEEE Transactions on Dependable and Secure Computing 2024|
 |[FedIPR: Ownership Verification for Federated Deep Neural Network Models](https://arxiv.org/pdf/2109.13236.pdf)||IEEE TPAMI, 2022|
 |[Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/abs/2102.04362)| |CVPR 2021|
 |[Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attack](https://proceedings.neurips.cc/paper/2019/hash/75455e062929d32a333868084286bb68-Abstract.html)|[code](https://github.com/kamwoh/DeepIPR)|NIPS 2019|
