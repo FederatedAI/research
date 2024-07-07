@@ -1,11 +1,8 @@
 # Report on Federated Learning Papers Published in Top System, Security, and Communication Conferences
 
-
-
 [TOC]
 
 ## 0. The System and Security conferences covered in this report.
-
 
 
 ### System 会议:
@@ -19,7 +16,6 @@
 - EuroSys (ACM SIGOPS in EUROPE)
 
 - ATC (USENIX Annual Technical Conference)
-
 
 
 
@@ -1494,6 +1490,8 @@ Lushan Song (Fudan University); Jiaxuan Wang (Fudan University); Zhexuan Wang (F
 Alex Davidson (Brave Software); Peter Snyder (Brave Software); E. B. Quirk (Brave Software); Joseph Genereux (Brave Software); Benjamin Livshits (Imperial College); Hamed Haddadi (Brave Software & Imperial College)
 
 
+
+
 #### (PSI) Laconic Private Set-Intersection From Pairings
 
 Diego F. Aranha (Aarhus University); Chuanwei Lin (Aarhus University); Claudio Orlandi (Aarhus University); Mark Simkin (Ethereum Foundation)
@@ -1594,8 +1592,6 @@ Yihe Zhang (University of Louisiana at Lafayette); Xu Yuan (University of Louisi
 
 > Poisoning attack on Collaborative filtering
 
-
-
 **Abstract:**
 
 Collaborative filtering (CF) recommender systems have been extensively developed and widely deployed in various social websites, promoting products or services to the users of interest. Meanwhile, work has been attempted at poisoning attacks to CF recommender systems for distorting the recommend results to reap commercial or personal gains stealthily. While existing poisoning attacks have demonstrated their effectiveness with the offline social datasets, they are impractical when applied to the real setting on online social websites. **This paper develops a novel and practical poisoning attack solution toward the CF recommender systems without knowing involved specific algorithms nor historical social data information a priori.** Instead of directly attacking the unknown recommender systems, our solution performs certain operations on the social websites to collect a set of sampling data for use in constructing a surrogate model for deeply learning the inherent recommendation patterns. This surrogate model can estimate the item proximities, learned by the recommender systems. By attacking the surrogate model, the corresponding solutions (for availability and target attacks) can be directly migrated to attack the original recommender systems. Extensive experiments validate the generated surrogate model's reproductive capability and demonstrate the effectiveness of our attack upon various CF recommender algorithms.
@@ -1608,8 +1604,6 @@ Boxin Wang (University of Illinois at Urbana-Champaign); Fan Wu (UIUC); Yunhui L
 
 > scalable privacy-preserving generative model
 
-
-
 **Abstract:**
 
 Recent success of deep neural networks (DNNs) hinges on the availability of large-scale dataset; however, training on such dataset often poses privacy risks for sensitive training information. In this paper, we aim to explore the power of generative models and gradient sparsity, and propose a **scalable privacy-preserving generative model** DATALENS. Comparing with the standard PATE privacy-preserving framework which allows teachers to vote on one-dimensional predictions, voting on the high dimensional gradient vectors is challenging in terms of privacy preservation. As dimension reduction techniques are required, we need to navigate a delicate tradeoff space between (1) the improvement of privacy preservation and (2) the slowdown of SGD convergence. To tackle this, we take advantage of communication efficient learning and propose a novel noise compression and aggregation approach TOPAGG by combining top-k compression for dimension reduction with a corresponding noise injection mechanism. We theoretically prove that the DATALENS framework guarantees differential privacy for its generated data, and provide analysis on its convergence. To demonstrate the practical usage of DATALENS, we conduct extensive experiments on diverse datasets including MNIST, Fashion-MNIST, and high dimensional CelebA, and we show that, DATALENS significantly outperforms other baseline DP generative models. In addition, we adapt the proposed TOPAGG approach, which is one of the key building blocks in DATALENS, to DP SGD training, and show that it is able to achieve higher utility than the state-of-the-art DP SGD approach in most cases. Our code is publicly available at [this https URL](https://github.com/AI-secure/DataLens).
@@ -1621,8 +1615,6 @@ Recent success of deep neural networks (DNNs) hinges on the availability of larg
 Minxing Zhang (Shandong University); Zihan Wang (Shandong University); Yang Zhang (CISPA Helmholtz Center for Information Security); Zhaochun Ren (Shandong University); Pengjie Ren (Shandong University); Zhunmin Chen (Shandong University); Pengfei Hu (Shandong University)
 
 >  Membership inference attack and defense on Collaborative filtering
-
-
 
 **Abstract:**
 
@@ -1639,9 +1631,7 @@ Mohammad Malekzadeh (Imperial College London); Anastasia Borovykh (Imperial Coll
 
 > privacy attack through private input encode
 
-
-
-Abstract:
+**Abstract:**
 
 It is known that deep neural networks, trained for the classification of non-sensitive target attributes, can reveal sensitive attributes of their input data through internal representations extracted by the classifier. **We take a step forward and show that deep classifiers can be trained to secretly encode a sensitive attribute of their input data into the classifier's outputs for the target attribute, at inference time**. Our proposed attack works even if users have a full white-box view of the classifier, can keep all internal representations hidden, and only release the classifier's estimations for the target attribute. We introduce an information-theoretical formulation for such attacks and present efficient empirical implementations for training honest-but-curious (HBC) classifiers: classifiers that can be accurate in predicting their target attribute, but can also exploit their outputs to secretly encode a sensitive attribute. **Our work highlights a vulnerability that can be exploited by malicious machine learning service providers to attack their user's privacy in several seemingly safe scenarios; such as encrypted inferences, computations at the edge, or private knowledge distillation**. Experimental results on several attributes in two face-image datasets show that a semi-trusted server can train classifiers that are not only perfectly honest but also accurately curious. We conclude by showing the difficulties in distinguishing between standard and HBC classifiers, discussing challenges in defending against this vulnerability of deep classifiers, and enumerating related open directions for future studies.
 
