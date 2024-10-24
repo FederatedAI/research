@@ -54,7 +54,7 @@ Our publications are categorized  as below:
 | Title| Code| Description| 
 |-----|-----|-----|
 |[Grounding Foundation Models through Federated Transfer Learning: A General Framework](https://arxiv.org/abs/2311.17431)||Preprint|
-|[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||Preprint|
+|[Optimizing Privacy, Utility and Efficiency in Constrained Multi-Objective Federated Learning](https://arxiv.org/abs/2305.00312)||ACM TIST 2024|
 |[Probably Approximately Correct Federated Learning](https://arxiv.org/abs/2304.04641)||Preprint|
 |[Trading Off Privacy, Utility and Efficiency in Federated Learning](https://arxiv.org/abs/2209.00230)||ACM TIST 2023|
 |[No Free Lunch Theorem for Security and Utility in Federated Learning](https://arxiv.org/pdf/2203.05816.pdf)||ACM TIST 2022|
