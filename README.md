@@ -18,6 +18,7 @@ This [Federated Learning Portal](http://federated-learning.org/) keeps track of 
 |[Fed_ModelNet40](https://github.com/FederatedAI/research/tree/main/datasets/Fed_Multiview_Gen)|It consists of images taken from various views of 3D models, and can be used for vertical federated learning research.|
 |[NUS-WIDE](https://lms.comp.nus.edu.sg/wp-content/uploads/2019/research/nuswide/NUS-WIDE.html)|To simulate a vertical federated learning setting, the image features of samples is put on one party and the textual tags on another party.|
 |[CheXpert](https://stanfordmlgroup.github.io/competitions/chexpert/)|CheXpert is a large dataset of chest X-rays and can be used for vertical federated learning research.|
+|[IOFT](https://ioft-data.engin.umich.edu/)|This website was created to serve as central directory for IoFT-based datasets. It features brief descriptions of each dataset categorized by its respective field with a link to the repository (research lab website, GitHub account, papers, etc..) where the data is contained. Our hope is to provide a means for model validation within different domains for IoFT, encourage researchers to develop real-life datasets for IoFT, and help with the outreach and visibility of their datasets and corresponding papers. |
 
 
 ## Publications
